@@ -1,0 +1,104 @@
+@import "./../base/vars";
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('./../../fonts/Montserrat/Montserrat-Regular.ttf');
+    src: local('Manrope Regular'), local('./../../fonts/Montserrat/Montserrat-Regular.ttf'),
+        url('./../../fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// body {
+//     font-family:'Montserrat', sans-serif;
+//     font-size: 16px;
+//     font-weight: 400;
+//     letter-spacing: 0;
+//     line-height: 1.2;
+//     margin: 0;
+//     height: 100%;
+//     min-width: 360px;
+// }
+
+// *{
+//     font-family: 'Montserrat';
+// }
+
+// h1{
+//     font-style: normal;
+//     font-weight: 700;
+//     font-size: 44px;
+//     letter-spacing: 2.7px;
+//     pointer-events: none;
+// }
+// h2{
+//     font-style: normal;
+//     font-weight: 600;
+//     font-size: 32px;
+//     pointer-events: none;
+// }
+// h3{
+//     font-style: normal;
+//     font-weight: 600;
+//     font-size: 20px;
+//     pointer-events: none;
+// }
+
+// p{
+//     margin: 0;
+//     pointer-events: none;
+// }
+// span{
+//     display: block;
+// }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* ==================== General Buttons ==================== */
+.green_button {
+    background-color: $green;
+    border-radius: 12px;
+    color: $white;
+    cursor: pointer;
+    display: block;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 33px 0px;
+    text-align: center;
+    text-decoration: none;
+    transition: ease-in-out 0.2s;
+
+    &:hover {
+    }
+}
+
+/* ==================== General Wrappers ==================== */
+// .main_content {
+//     flex: 1 1 auto;
+//     padding: 0;
+//     width: 100%;
+// }
+
+// .main{
+//     display: flex;
+//     flex-direction: column;
+//     margin: 0 auto;
+//     position: relative;
+//     width: 100%;
+//     min-height: 100vh;
+//     max-width: 1180px;
+//     overflow: hidden;
+// }
+
+// .inner_wrap {
+//     display: block;
+//     max-width: 1180px;
+//     margin: 0 auto;
+//     padding: 0;
+// }

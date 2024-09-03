@@ -1,0 +1,141 @@
+@import "./../base/vars";
+
+.page-services{
+    padding: 105px 0 0 0;
+    min-width: 420px;
+
+    .services{
+        .sec-header{
+            .sec-title{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-end;
+    
+                >p{
+                    width: 65%;
+                }
+    
+                span{
+                    display: inline-block;
+                }
+                .title-line{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-end;
+                    margin: 28px 0 0 8px;
+                    position: relative;
+                    height: 1px;
+                    width: 35%;
+
+                    &::before{
+                        background-color: #BEC0CA;
+                        content: "";
+                        height: 1px;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 78%;
+                        max-width: 377px;
+                    }
+                    p{
+                        color: $grey-dark;
+                        font-size: 14px;
+                        font-weight: bold;
+                        margin: 0 0 0 20px;
+                        text-transform: uppercase;
+                        text-align: right;
+                        width: 18%;
+                    }
+                }
+            }
+        }
+    }
+
+    .main{
+        .services{
+            .services__main{
+                .services__content{
+                    .services__wrap{
+                        .service-item-bottom-description{
+                            margin: 80px 0 0 0;
+                        }
+                    }
+                }
+            }
+        }
+        .order-sec{
+            .order-sec__wrap{
+                .order-sec-fig{
+                    img{}
+                }
+            }
+        }
+    }
+}
+
+
+@media only screen and (max-width: 1024px){
+    .page-services{
+        .main{
+            .services{
+                .services__main{
+                    .services__content{
+                        .services__wrap{
+                            .service-item-bottom-description{
+                                margin: 20px 0;
+                                padding: 0 10px;
+                            }
+                        }
+                    }
+                }
+            }
+            .order-sec{
+                .order-sec__wrap{
+                    .order-sec-fig{
+                        img{
+                            position: relative;
+                            top: 85px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    .page-services{
+        .main{
+            .services{
+                .sec-header{
+                   .sec-title{
+                        flex-direction: column-reverse;
+                        >p {
+                            width: 100%;
+                        }
+                        .title-line{
+                            margin: 0 0 30px 0;
+                            width: 100%;
+                        }
+                   } 
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 480px){
+    .page-services{
+        .main{
+            .order-sec{
+                .order-sec__wrap{
+                    .order-sec-fig{
+                        img{
+                            top: 120px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
