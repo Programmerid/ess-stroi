@@ -146,6 +146,31 @@ $(document).ready(function(){
     }
   }).eq(0).addClass('active');
   
+  // ===== Slider Gallery Works =====
+  $('.gallery-works-slider.owl-carousel').owlCarousel({
+    stagePadding: 10,
+    items: 4,
+    nav: true,
+    margin: 12,
+    dots: true,
+    responsiveClass:true,
+    responsive:{
+      1280:{
+        items:4
+      },
+      760:{
+        items:3
+      },
+      480:{
+        items:2
+      },
+      340:{
+        items:1
+      }
+        
+    }
+  });
+
   //service item
 
   // Старый код для открывания услуг
@@ -188,7 +213,6 @@ $(document).ready(function(){
 
   // Маска на ввод телефона
   const elements = document.querySelectorAll('.mask-phone'); 
-
   const maskOptions = {
     mask: '+{7}(000)000-00-00'
   };

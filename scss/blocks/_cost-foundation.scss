@@ -1,0 +1,136 @@
+.cost-foundation{
+    margin: 0 0 100px 0;
+
+    .cost-foundation-header{
+        margin: 0 0 50px 0;
+
+        h1{
+            margin: 0 0 12px 0;
+        }
+        p{}
+    }
+    .cost-foundation-main{
+        .cost-foundation-links{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+            margin: 0 0 62px 0;
+
+            a{
+                background-color: #F8F8F8;
+                border: 1px solid #DFDFDF;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                color: #303030;
+                border-radius: 25px;
+                font-weight: 500;
+                padding: 0 25px;
+                height: 47px;
+                margin: 0 7.5px;
+                transition: ease-in-out 0.2s;
+
+                &:hover{
+                    background-color: $green;
+                    border: 1px solid $green;
+                }
+
+                &.active{
+                    background-color: $green;
+                    border: 1px solid $green;
+                }
+
+                &:first-child,
+                &:last-child{
+                    margin: 0;
+                }
+            }
+        }
+        .cost-foundation-content{
+            .cost-foundation-content-item{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: space-between;
+
+                .cost-foundation-content-item-left{
+                    width: 49%;
+
+                    .cost-foundation-content-item-left-title{
+                        margin: 0 0 50px 0;
+
+                        h2{
+                            font-size: 32px;
+                            font-weight: 600;
+                            margin: 0 0 17px 0;
+                        }
+                        p{
+                            font-weight: 500;
+                        }
+                    }
+                    .form{
+                        h2{
+                            font-size: 32px;
+                            font-weight: 600;
+                            margin: 0 0 30px 0;
+                        }
+                        .cost-foundation-form-btns{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: space-between;
+                            margin: 0 0 59px 0;
+
+                            input{
+                                border: 1px solid $grey-light;
+                                border-radius: 2px;
+                                color: $grey-light;
+                                font-size: 16px;
+                                height: 80px;
+                                padding: 24px;
+                                margin: 0 9px 0 0;
+                            }
+                            button{
+                                padding: 28px;
+                            }
+                        }
+                        .form-sub{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: flex-start;
+                            width: 100%;
+                            max-width: none;
+
+                            >div{
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+                                justify-content: flex-start;
+
+                                p{
+                                    margin: 0 2px 0 0;
+                                }
+                            }
+
+                            input{
+                                border: 1px solid $grey-middle;
+                                border-radius: 2px;
+                                margin: 0 7px 0 0;
+                                height: 20px;
+                                width: 20px;
+                            }
+                        }
+                    }
+                }
+                .cost-foundation-content-item-right{
+                    width: 49%;
+
+                    img{}
+                }
+            }
+        }
+    }
+}
