@@ -1,0 +1,57 @@
+.get-feedback{
+    background: url("./../../img/get-feedback/bg.webp") no-repeat center;
+    background-size: cover;
+    padding: 90px 0;
+    color: $white;
+
+    .get-feedback-form{
+        .get-feedback-form-title{
+            margin: 0 0 40px 0;
+
+            h2{
+                font-size: 44px;
+                font-weight: 500;
+                margin: 0 0 22px 0;
+            }
+            p{
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+
+        form{
+            input{
+                background-color: transparent;
+                border: 1px solid #C8C8C8;
+                color: $white;
+            }
+        }
+
+        .get-feedback-form-social{
+            h5{
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+
+        .get-feedback-form-social-links{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: flex-start;
+
+            a{
+                height: 37px;
+                width: 37px;
+
+                &:first-child{
+                    margin: 0 10px 0 0;
+                }
+            }            
+        }
+
+        .get-feedback-consult{
+
+        }
+    }
+}

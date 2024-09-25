@@ -250,3 +250,56 @@ $(document).ready(function(){
   
   */
 });
+
+// === Секция Questions ===
+(function() {
+  // Получаем все элементы questions-list-item
+  const questionItems = document.querySelectorAll('.questions-list-item');
+
+  questionItems.forEach(item => {
+    item.addEventListener('click', () => {
+      const answer = item.querySelector('.questions-list-item-answer');
+
+      // Проверяем, открыт ли ответ
+      const isActive = answer.classList.contains('active');
+
+      // Сначала скрываем все ответы
+      questionItems.forEach(i => {
+        const otherAnswer = i.querySelector('.questions-list-item-answer');
+        otherAnswer.classList.add('hidden');
+        otherAnswer.classList.remove('active');
+      });
+
+      // Если ответ был закрыт, открываем его
+      if (!isActive) {
+        answer.classList.remove('hidden');
+        answer.classList.add('active');
+      }
+    });
+  });
+})();
+
+(function() {
+  // Получаем все ссылки и элементы контента
+  const links = document.querySelectorAll('.cost-foundation-link');
+  const items = document.querySelectorAll('.cost-foundation-content-item');
+
+  // Функция для обработки клика по ссылкам
+  function handleLinkClick(index) {
+      // Убираем класс active у всех ссылок и элементов контента
+      links.forEach(link => link.classList.remove('active'));
+      items.forEach(item => item.classList.remove('active'));
+      
+      // Добавляем класс active к нажатой ссылке и соответствующему элементу контента
+      links[index].classList.add('active');
+      items[index].classList.add('active');
+  }
+
+  // Добавляем обработчик клика для каждой ссылки
+  links.forEach((link, index) => {
+      link.addEventListener('click', (event) => {
+          event.preventDefault(); // Отменяем стандартное поведение ссылки
+          handleLinkClick(index);
+      });
+  });
+})();

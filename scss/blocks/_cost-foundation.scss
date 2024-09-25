@@ -4,7 +4,7 @@
     .cost-foundation-header{
         margin: 0 0 50px 0;
 
-        h1{
+        h2{
             margin: 0 0 12px 0;
         }
         p{}
@@ -50,10 +50,14 @@
         }
         .cost-foundation-content{
             .cost-foundation-content-item{
-                display: flex;
+                display: none;
                 flex-direction: row;
                 align-items: flex-start;
                 justify-content: space-between;
+
+                &.active{
+                    display: flex;
+                }
 
                 .cost-foundation-content-item-left{
                     width: 49%;

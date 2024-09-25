@@ -1,0 +1,90 @@
+.questions{
+    padding: 80px 0 50px;
+
+    h2{
+        margin: 0 0 50px 0;
+    }
+    .questions-list{
+        .questions-list-item{
+            border: 2px solid #D9D9D9;
+            border-radius: 10px;
+            padding: 26px 40px 26px 30px;
+            margin: 0 0 8px 0;
+            cursor: pointer;
+            transition: ease-in-out 0.2s;
+
+            &:hover{
+                border: 2px solid #e9e8e8;
+
+                .questions-list-item-title{
+                    p{
+                        opacity: 0.7;
+                    }
+                    span{
+                        background-color: #31cf81;
+
+                        &:before{
+                            top: calc(50% - 2.5px);
+                        }
+                    }
+                }
+            }
+
+            &:last-child{
+                margin: 0;
+            }
+
+            .questions-list-item-title{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+
+                p{
+                    font-size: 24px;
+                    font-weight: 400;
+                    opacity: 1;
+                    transition: ease-in-out 0.2s;
+                }
+                span{
+                    background-color: $green;
+                    position: relative;
+                    border-radius: 10px;
+                    height: 36px;
+                    width: 37px;
+                    transition: ease-in-out 0.2s;
+
+                    &:before{
+                        background: url("./../../img/icons/arrow-short.svg") no-repeat center;
+                        background-size: cover;
+                        height: 9px;
+                        width: 16px;
+                        content: "";
+                        position: absolute;
+                        left: calc(50% - 8px);
+                        top: calc(50% - 4.5px);
+                        transition: ease-in-out 0.2s;
+                    }
+                }
+            }
+            .questions-list-item-answer{
+                display: none;
+                margin: 10px 0 0 0;
+                width: calc(100% - 50px);
+                transition: ease-in-out 0.2s;
+
+                &.hidden {
+                    display: none;
+                }
+                &.active {
+                    display: block;
+                }
+
+                p{
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
