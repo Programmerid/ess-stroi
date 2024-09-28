@@ -1,0 +1,221 @@
+@import "./../base/vars";
+
+.reviews{
+    margin: 0 0 90px 0;
+    padding: 0;
+
+    &::before{
+        content: none;
+        display: none;
+    }
+
+    .reviews-header{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0 0 57px 0;
+        text-align: left;
+
+        span{
+            font-size: 96px;
+            font-weight: 600;
+            color: $green;
+            margin: 0 50px 0 0;
+        }
+        h2{
+            font-size: 44px;
+            font-weight: 600;
+        }
+    }
+    .reviews-video{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0 0 20px 0;
+
+        div{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 33%;
+
+            iframe{
+                height: 100vh;
+                max-height: 210px;
+            }
+            a{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+
+                p{
+                    color: $black;
+                    font-size: 24px;
+                    font-weight: 600;
+                    line-height: 1.4;
+                    margin: 0 0 10px 0;
+                    text-align: center;
+                }
+                img{
+                    width: 100%;
+                    max-width: 86px;
+                }
+            }
+        }
+    }
+    .reviews-avito{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .reviews-avito-link{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: flex-end;
+            text-align: right;
+            width: 30%;
+
+            h3{
+                color: $black;
+                font-size: 28.5px;
+                font-weight: 400;
+                margin: 0 0 16px 0;
+
+                a{
+                    display: inline-block;
+                    color: $green;
+                }
+            }
+            span{
+                font-size: 96px;
+                font-weight: 600;
+                color: $green;
+                margin: 0 0 38px 0;
+            }
+            img{
+                margin: 0 0 40px 0;
+            }
+            a{
+                color: $green;
+                font-size: 20px;
+                font-weight: 400;
+                text-transform: uppercase;
+                text-decoration: underline;
+            }
+        }
+        .reviews-avito-images{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 67%;
+
+            img{
+                width: 31%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 960px){
+    .reviews{    
+        &::before{}
+        .reviews-header{
+            flex-direction: column;
+            margin: 0 0 50px 0;
+
+            span{
+                margin: 0;
+            }
+            h2{
+                text-align: center;
+            }
+        }
+        .reviews-video{
+            justify-content: center;
+            flex-wrap: wrap;
+
+            div{
+                height: 210px;
+                width: 400px;
+                margin: 0 0 20px 0;
+
+                &:last-child{
+                    margin: 0;
+                }
+
+                iframe{}
+                a{
+                    p{}
+                    img{}
+                }
+            }
+        }
+        .reviews-avito{
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .reviews-avito-link{
+                align-items: center;
+                margin: 0 0 30px 0;
+                width: 100%;
+
+                h3{
+                    a{}
+                }
+                span{
+                    margin: 0 0 20px 0;
+                }
+                img{}
+                a{}
+            }
+            .reviews-avito-images{
+                width: 100%;
+
+                img{}
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    .reviews{    
+        &::before{}
+    
+        .reviews-header{
+            span{}
+            h2{}
+        }
+        .reviews-video{
+            div{
+                &:last-child{
+                    margin: 0;
+                }
+                iframe{}
+                a{
+                    p{}
+                    img{}
+                }
+            }
+        }
+        .reviews-avito{
+            .reviews-avito-link{
+                h3{
+                    a{}
+                }
+                span{}
+                img{}
+                a{}
+            }
+            .reviews-avito-images{
+                img{}
+            }
+        }
+    }
+}

@@ -148,13 +148,13 @@
     <section class="intertaiment">
       <div class="container">
         <div class="intertaiment-header">
-          <h2>Заливка <strong>долговечного</strong> фундамента</h2>
+          <h2>Заливка <span>долговечного</span> фундамента</h2>
         </div>
         <div class="intertaiment-description">
           <p>Мы используем качественные материалы и соблюдаем все технологические стандарты, чтобы фундамент был прочным и устойчивым. Ваш дом будет стоять на крепком основании, выдерживая любые нагрузки и погодные условия.</p>
         </div>
         <div class="intertaiment-feedback-btn">
-          <button class="btn btn-primery personal__btn js-consultation-btn">оставить заявку</button>
+          <button class="btn btn-primery js-consultation-btn">оставить заявку</button>
         </div>
         <div class="intertaiment-frametime">
           <div>
@@ -227,8 +227,7 @@
                   <div class="form-sub order-sec__sub">
                     <input type="checkbox">
                     <div>
-                      <p>Я даю согласие на обработку персональных данных и принимаю</p>
-                      <a href="pdf/politic.pdf" target="_blank"> политику конфиденциальности</a>
+                      <p>Я даю согласие на обработку персональных данных и принимаю<a href="pdf/politic.pdf" target="_blank"> политику конфиденциальности</a></p>
                     </div>
                   </div>
                 </form>
@@ -462,42 +461,33 @@
       <div class="container">
         <div class="reviews-header">
           <span>160+</span>
-          <h2>Видеообзоров и отзывов о наших проектах</h2>
+          <h2>Видеообзоров и отзывов о<br> наших проектах</h2>
         </div>
         <div class="reviews-video">
           <div>
-            <iframe width="420" height="315"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY">
-            </iframe>
+            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?rel=0&showinfo=0&controls=2"></iframe>
           </div>
           <div>
-            <iframe width="420" height="315"
-              src="https://www.youtube.com/embed/tgbNymZ7vqY">
-            </iframe>
+            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=2"></iframe>
           </div>
           <div>
-            <a href="">
+            <a href="https://www.youtube.com/@ess-stroy" target="_blank" title="YouTube">
               <p>Смотрите больше на YouTube</p>
               <img src="./img/icons/youtube-icon.svg"/>
             </a>
-
           </div>
         </div>
         <div class="reviews-avito">
-          <div>
-            <h3>Читайте отзывы о нас на <a href="">Авито</a></h3>
+          <div class="reviews-avito-link">
+            <h3>Читайте отзывы<br> о нас на <a href="">Авито</a></h3>
             <span>5,0</span>
             <img src="./img/icons/stars.svg" alt="stars rating">
             <a href="">Все отзывы</a>
           </div>
-          <div>
-            <img src="" alt="">
-          </div>
-          <div>
-            <img src="" alt="">
-          </div>
-          <div>
-            <img src="" alt="">
+          <div class="reviews-avito-images">
+            <img src="./img/reviews/1.png" alt="review">
+            <img src="./img/reviews/2.png" alt="review">
+            <img src="./img/reviews/1.png" alt="review">
           </div>
         </div>
       </div>
@@ -547,40 +537,42 @@
 
     <section class="get-feedback">
       <div class="container">
-        <div class="get-feedback-form">
-          <div class="get-feedback-form-title">
-            <h2>Получите консультацию по заливке фундамента</h2>
-            <p>Приложите документ с проектом вашего фундамента, и мы бесплатно проконсультируем вас и рассчитаем стоимость работ.</p>
-          </div>
-          <form action="php/mail.php" method="post" class="form popup-form js-form-val">
-            <input type="text" name="subj" hidden="" placeholder="Попап Перезвонить вам">
-            <input type="name" name="text" class="input" placeholder="Ваше имя">
-            <input type="tel" name="tel" class="input js-val mask-phone" placeholder="Ваше номер телефона">
-            <button class="btn btn-primery form-btn" type="submit">отправить</button>
-            <div class="form-sub order-sec__sub">
-              Я даю согласие на обработку персональных данных и принимаю<a href="pdf/politic.pdf"
-                target="_blank"> политику конфиденциальности</a>
+        <div class="get-feedback-wrapper">
+          <div class="get-feedback-form">
+            <div class="get-feedback-form-title">
+              <h2>Получите консультацию по заливке фундамента</h2>
+              <p>Приложите документ с проектом вашего фундамента, и мы бесплатно проконсультируем вас и рассчитаем стоимость работ.</p>
             </div>
-          </form>
-          <div class="get-feedback-form-social">
-            <h5>Задайте свой вопрос online</h5>
-            <div class="get-feedback-form-social-links">
-              <a href="https://vk.com/ess.stroy" target="_blank" title="Вконтакте">
-                <img src="img/get-feedback/vk_logo_square.svg" alt="Вконтакте">
-              </a>
-              <a href="https://t.me/ECC_stroygrupp" target="_blank" title="Telegram">
-                <img src="img/get-feedback/telegram_logo_square.svg" alt="Telegram">
-              </a>
+            <form action="php/mail.php" method="post" class="form popup-form js-form-val">
+              <input type="text" name="subj" hidden="" placeholder="Попап Перезвонить вам">
+              <input type="name" name="text" class="input" placeholder="Ваше имя">
+              <input type="tel" name="tel" class="input js-val mask-phone" placeholder="Ваше номер телефона">
+              <button class="btn btn-primery form-btn" type="submit">отправить</button>
+              <div class="form-sub order-sec__sub">
+                <input type="checkbox" />
+                <p>Я даю согласие на обработку персональных данных и принимаю <a href="pdf/politic.pdf" target="_blank"> политику конфиденциальности</a></p>
+              </div>
+            </form>
+            <div class="get-feedback-form-social">
+              <h5>Задайте свой вопрос online</h5>
+              <div class="get-feedback-form-social-links">
+                <a href="https://vk.com/ess.stroy" target="_blank" title="Вконтакте">
+                  <img src="img/get-feedback/vk_logo_square.svg" alt="Вконтакте">
+                </a>
+                <a href="https://t.me/ECC_stroygrupp" target="_blank" title="Telegram">
+                  <img src="img/get-feedback/telegram_logo_square.svg" alt="Telegram">
+                </a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="get-feedback-consult">
-          <div class="get-feedback-consult-left">
-            <h6>Смиронова Мария</h6>
-            <p>Менеджер по работе с клиентами</p>
-          </div>
-          <div class="get-feedback-consult-right">
-            <span></span>
+          <div class="get-feedback-consult">
+            <div class="get-feedback-consult-left">
+              <h6>Смиронова Мария</h6>
+              <p>Менеджер по работе с клиентами</p>
+            </div>
+            <div class="get-feedback-consult-right">
+              <span></span>
+            </div>
           </div>
         </div>
       </div>
@@ -683,75 +675,48 @@
 
     <section class="subscribe">
       <div class="container">
-        <div class="sub">
-          <div class="left">
+        <div class="subscribe-content">
+          <div class="subscribe-content-left">
             <p>Подписывайтесь на наши социальные сети, где мы</p>
             <h2>Поможем разобраться в нюансах строительства</h2>
           </div>
-          <div class="right">
-            <a href="https://vk.com/ess.stroy" target="_blank" title="Вконтакте">
-              <img src="img/vk.svg" alt="Вконтакте">
+          <div class="subscribe-content-right">
+            <a class="vk-link" href="https://vk.com/ess.stroy" target="_blank" title="Вконтакте">
+              <img src="./img/subscribe/vk_logo_sub.svg" alt="Вконтакте">
             </a>
-            <a href="https://t.me/ECC_stroygrupp" target="_blank" title="Telegram">
-              <img src="img/telegram.svg" alt="Telegram">
+            <a class="telegram-link" href="https://t.me/ECC_stroygrupp" target="_blank" title="Telegram">
+              <img src="./img/subscribe/telegram_logo_square.svg" alt="Telegram">
             </a>
-            <a href="https://www.youtube.com/@ess-stroy" target="_blank">
-              <img src="img/youtube.png" alt="">
+            <a class="youtube-link" href="https://www.youtube.com/@ess-stroy" target="_blank">
+              <img src="./img/subscribe/youtube_logo_sub.svg" alt="Youtube">
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="contacts" id="contacts">
+    <section class="location">
       <div class="container">
-        <div class="contacts__wrap">
-          <div class="contacts-map">
+        <div class="location-wrapper">
+          <div class="location-map">
             <div class="contacts-map__wrap" id="js-map"></div>
           </div>
-          <div class="contacts-office">
-            <img src="img/office-map.webp" alt="">
-          </div>
-          <div class="contacts-list">
-            <h2 class="sec-title"><span>Наши контакты</span></h2>
-            <div class="contact-item">
-              <img src="img/tel.svg" alt="">
-              <a href="tel:89385457888">8 (938) 545-78-88</a>
-            </div>
-            <div class="contact-item">
-              <img src="img/loc.svg" alt="">
-              <sup>Филиал в Краснодаре</sup>
-              <span>Краснодарский край, г. Краснодар, ул Российская, д.255, оф.12</span>
-            </div>
-            <div class="contact-item">
-              <img src="img/time.svg" alt="">
-              <span>Ежедневно с 09:00 до 17:00</span>
-            </div>
-            <div class="contact-item">
-              <img src="img/mail.svg" alt="">
+          <div class="location-contacts">
+            <h2>Наши контакты</h2>
+            <div class="location-contacts-links">
+              <a href="tel:8 (938) 545-78-88">8 (938) 545-78-88</a>
               <a href="mailto:info@ess.ru">info@ess.ru</a>
             </div>
-            <div class="contact-soc">
-              <div class="contact-soc__title">Напишите нам, мы сейчас онлайн</div>
-              <ul>
-                <li>
-                  <a href="https://vk.com/ess.stroy" target="_blank" title="Вконтакте"><img src="img/vk.svg"
-                      alt="Вконтакте"></a>
-                </li>
-                <li>
-                  <a href="https://wa.me/+79628800911" target="_blank" title="Whatsapp"><img src="img/whatsapp.svg"
-                      alt="Whatsapp"></a>
-                </li>
-                <li>
-                  <a href="https://t.me/ECC_stroygrupp" target="_blank" title="Telegram"><img src="img/telegram.svg"
-                      alt="Telegram"></a>
-                </li>
-              </ul>
+            <div class="location-contacts-office">
+              <h3>Приходите к нам в офис</h3>
+              <p>Краснодарский край, г. Краснодар, ул</p>
+              <p>Российская, д.255, оф.9</p>
             </div>
           </div>
         </div>
       </div>
     </section>
+
   </div>
 
   <footer class="footer">
@@ -912,7 +877,7 @@
   </div>
 </div>
 
-  <!--  === Scripts === -->
+  <!-- === Scripts === -->
 
   <!-- Map Api -->
   <script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU&scroll=true"></script>

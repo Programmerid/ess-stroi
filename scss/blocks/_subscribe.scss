@@ -1,0 +1,95 @@
+@import "./../base/vars";
+
+.subscribe{
+    margin: 0 0 80px 0;
+
+    .subscribe-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        .subscribe-content-left{
+            text-align: left;
+
+            p{
+                color: #757575;
+                font-size: 20px;
+                font-weight: 400;
+                margin: 0 0 12px 0;
+            }
+            h2{
+                color: #18181A;
+                font-size: 44px;
+                font-weight: 600;
+                padding: 0 20px 0 0;
+            }
+        }
+        .subscribe-content-right{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            a{
+                margin: 0 30px 0 0;
+
+                &.vk-link{
+                    min-height: 55px;
+                    max-height: 55px;
+                    min-width: 55px;
+                    max-width: 55px;
+                }
+                &.telegram-link{
+                    min-height: 50px;
+                    min-width: 50px;
+                    max-height: 50px;
+                    max-width: 50px;
+                }
+                &.youtube-link{
+                    height: auto;
+                    min-width: 69px;
+                    max-width: 69px;
+                }
+
+                &:last-child{
+                    margin: 0;
+                }
+
+                img{}
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .subscribe{
+        .subscribe-content{
+            flex-direction: column;
+
+            .subscribe-content-left{
+                display: flex;
+                flex-direction: column;
+                
+                p{
+                    order: 2;
+                    text-align: center;
+                }
+                h2{
+                    margin: 0 0 20px 0;
+                    order: 1;
+                    text-align: center;
+                }
+            }
+            .subscribe-content-right{
+                a{
+                    &.vk-link{}
+                    &.telegram-link{}
+                    &.youtube-link{}
+                    &:last-child{}
+                    img{}
+                }
+            }
+        }
+    }
+}

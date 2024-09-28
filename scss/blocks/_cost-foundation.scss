@@ -1,3 +1,5 @@
+@import "./../base/vars";
+
 .cost-foundation{
     margin: 0 0 100px 0;
 
@@ -15,6 +17,7 @@
             flex-direction: row;
             align-items: center;
             justify-content: flex-start;
+            flex-wrap: wrap;
             margin: 0 0 62px 0;
 
             a{
@@ -29,7 +32,7 @@
                 font-weight: 500;
                 padding: 0 25px;
                 height: 47px;
-                margin: 0 7.5px;
+                margin: 0 15px 10px 0;
                 transition: ease-in-out 0.2s;
 
                 &:hover{
@@ -40,11 +43,6 @@
                 &.active{
                     background-color: $green;
                     border: 1px solid $green;
-                }
-
-                &:first-child,
-                &:last-child{
-                    margin: 0;
                 }
             }
         }
@@ -115,7 +113,21 @@
                                 justify-content: flex-start;
 
                                 p{
-                                    margin: 0 2px 0 0;
+                                    color: #5E5E5E;
+                                    margin: 0;
+                                    text-align: left;
+
+                                    a{
+                                        display: inline-block;
+                                        color: #5E5E5E;
+                                        margin: 0 0 0 3px;
+                                        text-decoration: underline;
+                                        transition: ease-in-out 0.2s;
+
+                                        &:hover{
+                                            text-decoration: none;
+                                        }
+                                    }
                                 }
                             }
 
@@ -133,6 +145,114 @@
                     width: 49%;
 
                     img{}
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 980px){
+    .cost-foundation{
+        .cost-foundation-header{
+            h2{}
+            p{}
+        }
+        .cost-foundation-main{
+            .cost-foundation-links{
+                a{
+                    &:hover{}
+                    &.active{}
+                }
+            }
+            .cost-foundation-content{
+                .cost-foundation-content-item{
+                    flex-direction: column-reverse;
+
+                    &.active{}
+                    .cost-foundation-content-item-left{
+                        width: 100%;
+
+                        .cost-foundation-content-item-left-title{
+                            h2{}
+                            p{}
+                        }
+                        .form{
+                            h2{}
+                            .cost-foundation-form-btns{
+                                margin: 0 0 10px 0;
+
+                                input{}
+                                button{}
+                            }
+                            .form-sub{
+                                >div{
+                                    p{
+                                        a{
+                                            &:hover{}
+                                        }
+                                    }
+                                }
+                                input{}
+                            }
+                        }
+                    }
+                    .cost-foundation-content-item-right{
+                        margin: 0 0 30px 0;
+                        width: 100%;
+
+                        img{}
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    .cost-foundation{
+        .cost-foundation-header{
+            h2{}
+            p{}
+        }
+        .cost-foundation-main{
+            .cost-foundation-links{
+                margin: 0 0 40px 0;
+                
+                a{
+                    &:hover{}
+                    &.active{}
+                }
+            }
+            .cost-foundation-content{
+                .cost-foundation-content-item{
+                    &.active{}
+                    .cost-foundation-content-item-left{
+                        .cost-foundation-content-item-left-title{
+                            h2{}
+                            p{}
+                        }
+                        .form{
+                            h2{}
+                            .cost-foundation-form-btns{
+                                flex-direction: column;
+
+                                input{
+                                    margin: 0 0 10px 0;
+                                }
+                                button{}
+                            }
+                            .form-sub{
+                                >div{
+                                    p{
+                                        a{}
+                                    }
+                                }
+                                input{}
+                            }
+                        }
+                    }
+                    .cost-foundation-content-item-right{
+                        img{}
+                    }
                 }
             }
         }

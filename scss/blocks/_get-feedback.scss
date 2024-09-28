@@ -1,57 +1,278 @@
+@import "./../base/vars";
+
 .get-feedback{
     background: url("./../../img/get-feedback/bg.webp") no-repeat center;
     background-size: cover;
     padding: 90px 0;
     color: $white;
 
-    .get-feedback-form{
-        .get-feedback-form-title{
-            margin: 0 0 40px 0;
+    .get-feedback-wrapper{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
 
-            h2{
-                font-size: 44px;
-                font-weight: 500;
-                margin: 0 0 22px 0;
-            }
-            p{
-                font-size: 20px;
-                font-weight: 400;
-            }
+        &::before{
+            background: url("./../../img/get-feedback/consult.webp") no-repeat right bottom;
+            background-size: contain;
+            content: "";
+            position: absolute;
+            right: 0;
+            bottom: -90px;
+            height: 100%;
+            max-height: 714px;
+            width: 100%;
+            max-width: 532px;
         }
 
-        form{
-            input{
-                background-color: transparent;
-                border: 1px solid #C8C8C8;
-                color: $white;
+        .get-feedback-form{
+            width: 100%;
+            max-width: 750px;
+            position: relative;
+            left: 0;
+
+            .get-feedback-form-title{
+                margin: 0 0 40px 0;
+    
+                h2{
+                    font-size: 44px;
+                    font-weight: 500;
+                    margin: 0 0 22px 0;
+                }
+                p{
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+            }
+    
+            form{
+                margin: 0 0 24px 0;
+                width: 100%;
+                max-width: 560px;
+                
+                .form-sub{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    width: 100%;
+                    max-width: none;
+
+                    input{
+                        margin: 0 7px 0 0;
+                        height: 20px;
+                        width: 20px;
+                    }
+                    p{
+                        color: #818181;
+                        font-size: 13px;
+                        margin: 0;
+                        text-align: left;
+
+                        a{
+                            display: inline-block;
+                            color: #BCBCBC;
+                            font-size: 13px;
+                            margin: 0 0 0 3px;
+                            text-decoration: underline;
+                            transition: ease-in-out 0.2s;
+
+                            &:hover{
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+                input{
+                    background-color: transparent;
+                    border: 1px solid #C8C8C8;
+                    color: $white;
+                }
+            }
+    
+            .get-feedback-form-social{
+                h5{
+                    font-size: 20px;
+                    font-weight: 400;
+                    margin: 0 0 11px 0;
+                }
+            }
+    
+            .get-feedback-form-social-links{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+    
+                a{
+                    height: 37px;
+                    width: 37px;
+    
+                    &:first-child{
+                        margin: 0 10px 0 0;
+                    }
+                }            
             }
         }
-
-        .get-feedback-form-social{
-            h5{
-                font-size: 20px;
-                font-weight: 400;
-            }
-        }
-
-        .get-feedback-form-social-links{
+        .get-feedback-consult{
+            background: rgba(24, 24, 26, 0.41);
+            backdrop-filter: blur(19.5px);
+            border-radius: 37px;
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: center;
+            margin-top: 33%;
+            padding: 0 22px;
+            position: relative;
+            height: 77px;
+            min-width: 174px;
+            max-width: 218px;
+            position: absolute;
+            bottom: 0;
+            right: 0;
 
-            a{
-                height: 37px;
-                width: 37px;
+            .get-feedback-consult-left{
+                color: $white;
+                margin: 0 15px 0 0;
+                text-align: right;
 
-                &:first-child{
-                    margin: 0 10px 0 0;
+                h6{
+                    font-size: 15px;
+                    font-weight: 600;
+                    margin: 0 0 5px 0;
                 }
-            }            
+                p{
+                    font-size: 12px;
+                    font-weight: 300;
+                }
+            }
+            .get-feedback-consult-right{
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                justify-content: flex-start;
+
+                span{
+                    background-color: $green;
+                    border-radius: 50%;
+                    height: 8px;
+                    width: 8px;
+                }
+            }
         }
+    }
+}
 
-        .get-feedback-consult{
+.checkout-link {
+    display: inline-flex; /* Внутренние элементы выравниваются в одну строку */
+    align-items: center; /* Вертикальное выравнивание */
+    background-color: #28a745; /* Цвет фона */
+    color: white; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 5px; /* Закругляем углы */
+    padding: 10px 20px; /* Отступы */
+    transition: background-color 0.3s; /* Плавный переход цвета фона */
+}
 
+.checkout-link img {
+    margin-right: 10px; /* Отступ между иконкой и текстом */
+    width: 20px; /* Ширина иконки */
+    height: auto; /* Автоматическая высота */
+}
+
+.checkout-link:hover {
+    background-color: #218838; /* Цвет фона при наведении */
+}
+
+@media only screen and (max-width: 980px){
+    .get-feedback{
+        .get-feedback-wrapper{
+            &::before{
+                max-width: 400px;
+            }
+            .get-feedback-form{
+                max-width: 500px;
+
+                .get-feedback-form-title{
+                    h2{}
+                    p{}
+                }
+                form{
+                    .form-sub{
+                        p{
+                            a{
+                                &:hover{}
+                            }
+                        }
+                    }
+                    input{}
+                }
+                .get-feedback-form-social{
+                    h5{}
+                }
+                .get-feedback-form-social-links{
+                    a{
+                        &:first-child{}
+                    }            
+                }
+            }
+            .get-feedback-consult{
+                .get-feedback-consult-left{
+                    h6{}
+                    p{}
+                }
+                .get-feedback-consult-right{
+                    span{}
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .get-feedback{
+        .get-feedback-wrapper{
+            &::before{
+                display: none;
+                content: none;
+            }
+            .get-feedback-form{
+                .get-feedback-form-title{
+                    h2{}
+                    p{}
+                }
+                form{
+                    .form-sub{
+                        p{
+                            a{
+                                &:hover{}
+                            }
+                        }
+                    }
+                    input{}
+                }
+                .get-feedback-form-social{
+                    h5{}
+                }
+                .get-feedback-form-social-links{
+                    a{
+                        &:first-child{}
+                    }            
+                }
+            }
+            .get-feedback-consult{
+                display: none;
+
+                .get-feedback-consult-left{
+                    h6{}
+                    p{}
+                }
+                .get-feedback-consult-right{
+                    span{}
+                }
+            }
         }
     }
 }

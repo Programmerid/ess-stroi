@@ -1,3 +1,5 @@
+@import "./../base/vars";
+
 .page-services-type{
     background: $white;
 }
@@ -64,8 +66,40 @@
 
             p{
                 color: $white;
+                font-size: 18px;
                 font-weight: 600;
                 z-index: 1;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .foundation-facilities{
+        margin: 45px 0;
+
+        .foundation-facilities-header{
+            margin: 0 0 30px 0;
+            
+            h2{}
+        }
+        .foundation-facilities-links{
+            flex-wrap: wrap;
+
+            a{
+                width: 49%;
+
+                &:nth-child(1){}
+                &:nth-child(2){}
+                &:nth-child(3){}
+                &:nth-child(4){}
+    
+                &:before{}
+    
+                &:hover{
+                    &:before{}
+                }
+                p{}
             }
         }
     }

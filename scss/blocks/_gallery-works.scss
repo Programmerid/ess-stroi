@@ -1,3 +1,5 @@
+@import "./../base/vars";
+
 .gallery-works{
     position: relative;
     margin: 0 0 100px 0;
@@ -31,7 +33,7 @@
                 align-items: center;
                 justify-content: center;
                 position: absolute;
-                top: -105px;
+                top: -109px;
                 right: 0;
 
                 .owl-prev,
@@ -79,6 +81,50 @@
 
                     &.active{
                         background-color: #4781FF;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .gallery-works{
+        .gallery-works-header{
+            h2{}
+        }
+        .gallery-works-content{
+            .gallery-works-slider{
+                .owl-stage-outer{
+                    .owl-stage{}
+                }
+                .item{
+                    div{
+                        img{
+                            &:nth-child(1){}
+                        }
+                    }
+                }
+                .owl-nav{
+                    justify-content: space-between;
+                    top: 75px;
+                    right: -15%;
+                    width: 130%;
+
+                    .owl-prev,
+                    .owl-next{
+                        span{}
+                    }
+                    .owl-prev{
+                        span{}
+                    }
+                    .owl-next{
+                        span{}
+                    }
+                }
+                .owl-dots{
+                    .owl-dot{
+                        &.active{}
                     }
                 }
             }

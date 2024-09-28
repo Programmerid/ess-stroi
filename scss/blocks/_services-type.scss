@@ -14,8 +14,14 @@ h1{
         width: 100%;
 
         h2{
+            font-size: 44px;
+            font-weight: 400;
             max-width: 675px;
             width: 100%;
+
+            span{
+                font-weight: 600;
+            }
         }
     }
     .intertaiment-description{
@@ -33,7 +39,8 @@ h1{
         width: 100%;
 
         button{
-
+            width: 100%;
+            max-width: 340px;
         }
     }
     .intertaiment-frametime{
@@ -71,8 +78,6 @@ h1{
                 padding: 0 0 24px 0;
                 position: relative;
 
-                
-
                 &::before{
                     background-color: $green;
                     border-radius: 50%;
@@ -90,6 +95,71 @@ h1{
                     bottom: 6px;
                     height: 1px;
                     width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .intertaiment{
+        padding: 110px 0 80px 0;
+    }
+}
+@media only screen and (max-width: 768px){
+    .intertaiment{
+        padding: 100px 0 20px 0;
+        text-align: center;
+
+        .intertaiment-header{
+            h2{
+                span{}
+            }
+        }
+        .intertaiment-description{
+            p{}
+        }
+        .intertaiment-feedback-btn{
+            button{
+                margin: 0 auto;
+            }
+        }
+        .intertaiment-frametime{
+            flex-direction: column;
+            align-items: center;
+
+            div{
+                &:nth-child(1){
+                    p{
+                        &::after{}
+                    }
+                }
+                &:nth-child(2){
+                    p{
+                        &::after{}
+                    }
+                }
+                &:nth-child(3){
+                    p{
+                        &::after{}
+                        &::before{
+                            content: none;
+                            display: none;
+                        }
+                    }
+                }
+                p{
+                    &::before{
+                        border-radius: 0;
+                        left: calc(50% - 0.5px);
+                        bottom: 0;
+                        height: 60%;
+                        width: 1px;
+                    }
+                    &::after{
+                        content: none;
+                        display: none;
+                    }
                 }
             }
         }
