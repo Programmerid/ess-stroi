@@ -131,3 +131,43 @@
         }
     }
 }
+@media only screen and (max-width: 640px){
+    .gallery-works{
+        .gallery-works-header{
+            h2{}
+        }
+        .gallery-works-content{
+            .gallery-works-slider{
+                .owl-stage-outer{
+                    .owl-stage{}
+                }
+                .item{
+                    div{
+                        img{
+                            &:nth-child(1){}
+                        }
+                    }
+                }
+                .owl-nav{
+                    display: none;
+
+                    .owl-prev,
+                    .owl-next{
+                        span{}
+                    }
+                    .owl-prev{
+                        span{}
+                    }
+                    .owl-next{
+                        span{}
+                    }
+                }
+                .owl-dots{
+                    .owl-dot{
+                        &.active{}
+                    }
+                }
+            }
+        }
+    }
+}

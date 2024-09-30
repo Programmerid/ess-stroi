@@ -316,6 +316,8 @@ h1 {
 }
 .foundation-facilities .foundation-facilities-header h2 {
   color: #000000;
+  font-size: 44px;
+  font-weight: 600;
 }
 .foundation-facilities .foundation-facilities-links {
   display: flex;
@@ -392,6 +394,8 @@ h1 {
 }
 .cost-foundation .cost-foundation-header h2 {
   margin: 0 0 12px 0;
+  font-size: 44px;
+  font-weight: 600;
 }
 .cost-foundation .cost-foundation-main .cost-foundation-links {
   display: flex;
@@ -608,6 +612,11 @@ h1 {
     top: 75px;
     right: -15%;
     width: 130%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .gallery-works .gallery-works-content .gallery-works-slider .owl-nav {
+    display: none;
   }
 }
 .reviews {
@@ -1026,6 +1035,7 @@ h1 {
 }
 .calc.services-calc .calc__wrap .calc__main h2 {
   color: #0CBB65;
+  font-size: 32px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1039,8 +1049,15 @@ h1 {
 .questions {
   margin: 0 0 100px 0;
 }
+.questions.questions-page {
+  margin: 0 0 150px 0;
+}
+.questions .questions-row {
+  margin: 0 0 80px 0;
+}
 .questions h2 {
   margin: 0 0 50px 0;
+  font-size: 44px;
 }
 .questions .questions-list .questions-list-item {
   border: 2px solid #D9D9D9;
@@ -1266,4 +1283,50 @@ h1 {
   .location .location-wrapper .location-contacts .location-contacts-links {
     margin: 0 0 20px 0;
   }
+}
+.faq-banner {
+  background: url("./../../img/page-faq/bg.png") no-repeat center;
+  background-size: cover;
+  margin: 60px 0 60px;
+  padding: 90px 0;
+}
+.faq-banner .faq-banner-content {
+  text-align: left;
+}
+.faq-banner .faq-banner-content h2 {
+  color: #ffffff;
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+.faq-banner .faq-banner-content p {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 1024px) {
+  body .faq-banner {
+    margin: 120px 0 60px;
+    padding: 60px 0;
+  }
+}
+.questions-ask {
+  margin: 0 0 120px 0;
+}
+.questions-ask .questions-ask-content h2 {
+  color: #000000;
+  font-size: 48px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.questions-ask .questions-ask-content p {
+  color: #303030;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 60px 0;
+}
+.questions-ask .questions-ask-content button {
+  width: 100%;
+  max-width: 426px;
 }/*# sourceMappingURL=main.css.map */

@@ -242,12 +242,6 @@ $(document).ready(function(){
     $('body').addClass('no-scroll');
     $('#js-popup-consultation').addClass('open');
   })
-  
-
-   
-  
-  
-  
   */
 });
 

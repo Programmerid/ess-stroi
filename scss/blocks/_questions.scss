@@ -1,8 +1,19 @@
+@import "./../base/vars";
+
 .questions{
     margin: 0 0 100px 0;
 
+    &.questions-page{
+        margin: 0 0 150px 0;
+    }
+
+    .questions-row{
+        margin: 0 0 80px 0;
+    }
+
     h2{
         margin: 0 0 50px 0;
+        font-size: 44px;
     }
     .questions-list{
         .questions-list-item{
