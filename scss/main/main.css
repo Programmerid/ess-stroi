@@ -1226,6 +1226,12 @@ h1 {
 .location .location-wrapper .location-map .contacts-map__wrap {
   min-height: 480px;
   position: relative;
+  width: 100% !important;
+  max-width: 100% !important;
+}
+.location .location-wrapper .location-map .contacts-map__wrap .ymaps-map {
+  width: 100% !important;
+  max-width: 100% !important;
 }
 .location .location-wrapper .location-contacts {
   text-align: left;
@@ -1294,7 +1300,7 @@ h1 {
 .faq-banner {
   background: url("./../../img/page-faq/bg.png") no-repeat center;
   background-size: cover;
-  margin: 60px 0 60px;
+  margin: 120px 0 60px;
   padding: 90px 0;
 }
 .faq-banner .faq-banner-content {
@@ -1314,7 +1320,7 @@ h1 {
 
 @media only screen and (max-width: 1024px) {
   body .faq-banner {
-    margin: 120px 0 60px;
+    margin: 60px 0 60px;
     padding: 60px 0;
   }
 }
@@ -1336,4 +1342,84 @@ h1 {
 .questions-ask .questions-ask-content button {
   width: 100%;
   max-width: 426px;
+}
+
+.stocks {
+  background: linear-gradient(180deg, #E7EDF2 0%, rgba(231, 237, 242, 0) 90.8%);
+  padding: 90px 0 75px;
+}
+.stocks .stocks-header {
+  margin: 0 0 40px 0;
+  width: 100%;
+}
+.stocks .stocks-header h2 {
+  color: #18181A;
+  font-size: 44px;
+  font-weight: 600;
+}
+.stocks .stocks-list .stocks-list-item {
+  background-color: #CAFFE5;
+  border-radius: 73px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 0 17px 0;
+  padding: 50px 60px;
+  width: 100%;
+}
+.stocks .stocks-list .stocks-list-item .stocks-list-item-text {
+  margin: 0 30px 0 0;
+}
+.stocks .stocks-list .stocks-list-item .stocks-list-item-text h3 {
+  color: #18181A;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+.stocks .stocks-list .stocks-list-item .stocks-list-item-text p {
+  color: rgba(58, 58, 58, 0.61);
+  font-size: 20px;
+  font-weight: 400;
+}
+.stocks .stocks-list .stocks-list-item .stocks-list-item-btn button {
+  background-color: transparent;
+  border: 1px solid rgb(138, 208, 174);
+  border-radius: 20px;
+  color: rgb(24, 24, 26);
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 35px;
+  width: 310px;
+  transition: ease-in-out 0.2s;
+}
+.stocks .stocks-list .stocks-list-item .stocks-list-item-btn button:hover {
+  background-color: #aafbd3;
+}
+.stocks .stocks-list .stocks-list-item .stocks-list-item-btn button p {
+  padding: 0 19px 0 0;
+  position: relative;
+}
+.stocks .stocks-list .stocks-list-item .stocks-list-item-btn button p::before {
+  background: url("./../../img/icons/arrow-right.svg") no-repeat center;
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 3px;
+  height: 14px;
+  width: 9px;
+}
+
+@media only screen and (max-width: 980px) {
+  .stocks .stocks-list .stocks-list-item {
+    flex-direction: column;
+  }
+  .stocks .stocks-list .stocks-list-item .stocks-list-item-text {
+    margin: 0 0 30px 0;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .stocks .stocks-list .stocks-list-item {
+    padding: 35px 30px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -15,6 +15,13 @@
             .contacts-map__wrap{
                 min-height: 480px;
                 position: relative;
+                width: 100% !important;
+                max-width: 100% !important;
+
+                .ymaps-map{
+                    width: 100% !important;
+                    max-width: 100% !important;
+                }
             }
         }
         .location-contacts{

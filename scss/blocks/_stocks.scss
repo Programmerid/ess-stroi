@@ -1,0 +1,129 @@
+@import "./../base/vars";
+
+.stocks{
+    background: linear-gradient(180deg, #E7EDF2 0%, rgba(231, 237, 242, 0) 90.8%);
+    padding: 90px 0 75px;
+
+    .stocks-header{
+        margin: 0 0 40px 0;
+        width: 100%;
+
+        h2{
+            color: #18181A;
+            font-size: 44px;
+            font-weight: 600;
+        }
+    }
+    .stocks-list{
+        .stocks-list-item{
+            background-color: #CAFFE5;
+            border-radius: 73px;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            margin: 0 0 17px 0;
+            padding: 50px 60px;
+            width: 100%;
+
+            .stocks-list-item-text{
+                margin: 0 30px 0 0;
+
+                h3{
+                    color: #18181A;
+                    font-size: 36px;
+                    font-weight: 600;
+                    margin: 0 0 12px 0;
+                }
+                p{
+                    color: rgba(58, 58, 58, 0.61);
+                    font-size: 20px;
+                    font-weight: 400;
+                }
+            }
+            .stocks-list-item-btn{
+                button{
+                    background-color: transparent;
+                    border: 1px solid rgba(138, 208, 174, 1);
+                    border-radius: 20px;
+                    color: rgba(24, 24, 26, 1);
+                    font-size: 16px;
+                    font-weight: 500;
+                    padding: 15px 35px;
+                    width: 310px;
+                    transition: ease-in-out 0.2s;
+
+                    &:hover{
+                        background-color: #aafbd3;
+                    }
+
+                    p{
+                        padding: 0 19px 0 0;
+                        position: relative;
+
+                        &::before{
+                            background: url("./../../img/icons/arrow-right.svg") no-repeat center;
+                            content: "";
+                            position: absolute;
+                            right: 0;
+                            top: 3px;
+                            height: 14px;
+                            width: 9px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 980px){
+    .stocks{
+        .stocks-header{
+            h2{}
+        }
+        .stocks-list{
+            .stocks-list-item{
+                flex-direction: column;
+
+                .stocks-list-item-text{
+                    margin: 0 0 30px 0;
+
+                    h3{}
+                    p{}
+                }
+                .stocks-list-item-btn{
+                    button{
+                        p{
+                            &::before{}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 640px){
+    .stocks{
+        .stocks-header{
+            h2{}
+        }
+        .stocks-list{
+            .stocks-list-item{
+                padding: 35px 30px;
+                
+                .stocks-list-item-text{
+                    h3{}
+                    p{}
+                }
+                .stocks-list-item-btn{
+                    button{
+                        p{
+                            &::before{}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
