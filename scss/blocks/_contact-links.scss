@@ -1,0 +1,105 @@
+@import "./../base/vars";
+
+.contact-links{
+    margin: 0 0 70px 0;
+    width: 100%;
+
+    .contact-links-list{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        .contact-links-list-left,
+        .contact-links-list-right{
+            width: 48%;
+
+            h5{
+                color: rgba(48, 48, 48, 1);
+                font-size: 20px;
+                font-weight: 400;
+                margin: 0 0 20px 0;
+            }
+            p{
+                color: rgba(143, 143, 143, 1);
+                font-size: 13px;
+                font-weight: 400;
+                margin: 0 0 20px 0;
+            }
+            a{
+                &.contact-tel{
+                    color: #18181A;
+                    font-size: 44px;
+                    font-weight: 600;
+                    margin: 0 0 20px 0;
+                }
+                &.contact-tg{
+                    color: #303030;
+                    font-size: 20px;
+                    font-weight: 400;
+                    margin: 0 0 20px 0;
+                }
+            }
+
+            .contact-links-list-socials{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+
+                a{
+                    &.vk-link{
+                        margin: 0 10px 0 0;
+                        height: 37px;
+                        width: 37px;
+
+                        img{
+                            height: 37px;
+                            width: 37px;
+                        }
+                    }
+                    &.telegram-link{
+                        height: 37px;
+                        width: 37px;
+
+                        img{
+                            height: 37px;
+                            width: 37px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 980px){
+    .contact-links{
+        .contact-links-list{
+            flex-direction: column-reverse;
+
+            .contact-links-list-left,
+            .contact-links-list-right{
+                margin: 0 0 20px 0;
+
+                h5{}
+                p{}
+                a{
+                    &.contact-tel{}
+                    &.contact-tg{}
+                }
+    
+                .contact-links-list-socials{
+                    a{
+                        &.vk-link{
+                            img{}
+                        }
+                        &.telegram-link{
+                            img{}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

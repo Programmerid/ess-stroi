@@ -12,6 +12,38 @@
     }
 }
 
+/* page our contacts */
+.page-our-contacts{
+    .get-feedback{
+        margin: 0;
+
+        .get-feedback-wrapper{
+            .get-feedback-form{
+                .get-feedback-form-title{
+                    ul{
+                        list-style-type: disc;
+                        list-style: disc;
+                        padding: 0 0 0 19px;
+                        text-align: left;
+
+                        li{
+                            color: #D1D1D1;
+                            font-size: 20px;
+                            font-weight: 400;
+                            list-style: disc;
+                            margin: 0 0 5px 0;
+
+                            &:last-child{
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 .get-feedback{
     background: url("./../../img/get-feedback/bg.webp") no-repeat center;
     background-size: cover;

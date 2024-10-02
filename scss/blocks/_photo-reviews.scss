@@ -1,19 +1,33 @@
 @import "./../base/vars";
 
-.gallery-works{
+.photo-reviews{
     position: relative;
     margin: 0 0 100px 0;
 
-    .gallery-works-header{
+    .photo-reviews-header{
         margin: 0 0 47px 0;
 
-        h2{
-            font-size: 44px;
-            font-weight: 600;
+        h4{
+            color: $black;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0 0 50px 0;
+            width: 100%;
+
+            a{
+                color: $green;
+                display: inline-block;
+                padding: 0 0 0 5px;
+                transition: ease-in-out 0.2s;
+                
+                &:hover{
+                    color: #0fdd78;
+                }
+            }
         }
     }
-    .gallery-works-content{
-        .gallery-works-slider{
+    .photo-reviews-content{
+        .photo-reviews-slider{
             .owl-stage-outer{
                 .owl-stage{
                 }
@@ -94,12 +108,12 @@
 }
 
 @media only screen and (max-width: 768px){
-    .gallery-works{
-        .gallery-works-header{
+    .photo-reviews{
+        .photo-reviews-header{
             h2{}
         }
-        .gallery-works-content{
-            .gallery-works-slider{
+        .photo-reviews-content{
+            .photo-reviews-slider{
                 .owl-stage-outer{
                     .owl-stage{}
                 }
@@ -137,12 +151,12 @@
     }
 }
 @media only screen and (max-width: 640px){
-    .gallery-works{
-        .gallery-works-header{
+    .photo-reviews{
+        .photo-reviews-header{
             h2{}
         }
-        .gallery-works-content{
-            .gallery-works-slider{
+        .photo-reviews-content{
+            .photo-reviews-slider{
                 .owl-stage-outer{
                     .owl-stage{}
                 }

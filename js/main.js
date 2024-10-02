@@ -171,6 +171,31 @@ $(document).ready(function(){
     }
   });
 
+  // ===== Slider Photo Reviews =====
+  $('.photo-reviews-slider.owl-carousel').owlCarousel({
+    stagePadding: 10,
+    items: 5,
+    nav: true,
+    margin: 10,
+    dots: true,
+    responsiveClass:true,
+    responsive:{
+      1280:{
+        items:5
+      },
+      760:{
+        items:4
+      },
+      480:{
+        items:2
+      },
+      340:{
+        items:1
+      }
+        
+    }
+  });
+
   //service item
 
   // Старый код для открывания услуг
@@ -247,24 +272,20 @@ $(document).ready(function(){
 
 // === Секция Questions ===
 (function() {
-  // Получаем все элементы questions-list-item
   const questionItems = document.querySelectorAll('.questions-list-item');
 
   questionItems.forEach(item => {
     item.addEventListener('click', () => {
       const answer = item.querySelector('.questions-list-item-answer');
 
-      // Проверяем, открыт ли ответ
       const isActive = answer.classList.contains('active');
 
-      // Сначала скрываем все ответы
       questionItems.forEach(i => {
         const otherAnswer = i.querySelector('.questions-list-item-answer');
         otherAnswer.classList.add('hidden');
         otherAnswer.classList.remove('active');
       });
 
-      // Если ответ был закрыт, открываем его
       if (!isActive) {
         answer.classList.remove('hidden');
         answer.classList.add('active');
@@ -274,26 +295,73 @@ $(document).ready(function(){
 })();
 
 (function() {
-  // Получаем все ссылки и элементы контента
   const links = document.querySelectorAll('.cost-foundation-link');
   const items = document.querySelectorAll('.cost-foundation-content-item');
 
-  // Функция для обработки клика по ссылкам
   function handleLinkClick(index) {
-      // Убираем класс active у всех ссылок и элементов контента
       links.forEach(link => link.classList.remove('active'));
       items.forEach(item => item.classList.remove('active'));
       
-      // Добавляем класс active к нажатой ссылке и соответствующему элементу контента
       links[index].classList.add('active');
       items[index].classList.add('active');
   }
-
-  // Добавляем обработчик клика для каждой ссылки
   links.forEach((link, index) => {
       link.addEventListener('click', (event) => {
-          event.preventDefault(); // Отменяем стандартное поведение ссылки
+          event.preventDefault();
           handleLinkClick(index);
       });
   });
 })();
+
+// === секция video-feedback. Показ скрытых видео отзывов
+(function() {
+  document.addEventListener('DOMContentLoaded', function () {
+      const moreVideosButton = document.querySelector('.more-videos');
+      const lessVideosButton = document.querySelector('.less-videos');
+      const feedbackItems = document.querySelectorAll('.video-feedback-list-item');
+
+      if (moreVideosButton && lessVideosButton && feedbackItems.length > 0) {
+
+          function showItems(items) {
+              items.forEach((item, index) => {
+                  if (index >= 6 && item.classList.contains('hidden')) {
+                      item.classList.remove('hidden');
+                      item.classList.add('visible');
+                  }
+              });
+          }
+
+          function hideItems(items) {
+              items.forEach((item, index) => {
+                  if (index >= 6 && item.classList.contains('visible')) {
+                      item.classList.remove('visible');
+                      item.classList.add('hidden');
+                  }
+              });
+          }
+
+          moreVideosButton.addEventListener('click', function (event) {
+              event.preventDefault();
+              showItems(feedbackItems);
+              moreVideosButton.classList.add('hidden');
+              lessVideosButton.classList.remove('hidden');
+          });
+
+          lessVideosButton.addEventListener('click', function (event) {
+              event.preventDefault();
+              hideItems(feedbackItems);
+              lessVideosButton.classList.add('hidden');
+              moreVideosButton.classList.remove('hidden');
+          });
+
+          feedbackItems.forEach((item, index) => {
+              if (index < 6) {
+                  item.classList.add('visible');
+              } else {
+                  item.classList.add('hidden');
+              }
+          });
+      }
+  });
+})();
+

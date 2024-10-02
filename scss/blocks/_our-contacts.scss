@@ -1,0 +1,24 @@
+@import "./../base/vars";
+
+.our-contacts{
+    background: url("./../../img/our-contacts/bg.webp") no-repeat;
+    background-size: cover;
+    margin: 120px 0 60px 0;
+    padding: 85px 0;
+
+    h1{
+        color: $white;
+        font-size: 48px;
+        font-weight: 600;
+        text-align: left;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .our-contacts{
+        margin: 60px 0 60px 0;
+    
+        h1{}
+    }
+}

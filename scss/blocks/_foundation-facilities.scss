@@ -3,6 +3,13 @@
 .page-services-type{
     background: $white;
 }
+.page-our-contacts{
+    .foundation-facilities{
+        .foundation-facilities-links{
+            justify-content: flex-start;
+        }
+    }
+}
 .foundation-facilities{
     margin: 90px 0;
 
@@ -14,12 +21,41 @@
             font-size: 44px;
             font-weight: 600;
         }
+        h6{
+            color: $black;
+            font-size: 20px;
+            font-weight: 400;
+            margin: 10px 0 6px 0;
+            text-align: left;
+            max-width: 400px;
+        }
+        p{
+            color: #8F8F8F;
+            font-size: 13px;
+            font-weight: 400;
+            text-align: left;
+            max-width: 400px;
+        }
     }
     .foundation-facilities-links{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        flex-wrap: wrap;
+
+        div{
+            max-height: 235px;
+            max-width: 310px;
+            margin: 0 0.5% 1% 0.5%;
+            width: 24%;
+
+            img{
+                max-height: 235px;
+                max-width: 310px;
+                width: 100%;
+            }
+        }
 
         a{
             display: flex;
@@ -76,7 +112,30 @@
     }
 }
 
+@media only screen and (max-width: 1024px){
+    .page-our-contacts{
+        .foundation-facilities{
+            .foundation-facilities-links{
+                div{
+                    margin: 0 0.5% 1% 0.5%;
+                    width: 32%;
+                }
+            }
+        }
+    }
+}
 @media only screen and (max-width: 768px){
+    .page-our-contacts{
+        .foundation-facilities{
+            .foundation-facilities-links{
+                div{
+                    margin: 0 0.5% 1% 0.5%;
+                    width: 49%;
+                }
+            }
+        }
+    }
+
     .foundation-facilities{
         margin: 45px 0;
 
