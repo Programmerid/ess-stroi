@@ -196,6 +196,28 @@ $(document).ready(function(){
     }
   });
 
+   // ===== Slider Photo Reviews =====
+   $('.blog-news-slider.owl-carousel').owlCarousel({
+    stagePadding: 10,
+    items: 3,
+    nav: true,
+    margin: 10,
+    dots: true,
+    responsiveClass:true,
+    responsive:{
+      1280:{
+        items:3
+      },
+      760:{
+        items:2
+      },
+      480:{
+        items:1
+      }
+        
+    }
+  });
+
   //service item
 
   // Старый код для открывания услуг

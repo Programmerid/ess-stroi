@@ -1,0 +1,219 @@
+@import "./../base/vars";
+
+.blog-news{
+    position: relative;
+    margin: 0 0 75px 0;
+
+    .blog-news-header{
+        margin: 0 0 47px 0;
+
+        h2{
+            font-size: 44px;
+            font-weight: 600;
+            width: calc(100% - 180px);
+        }
+    }
+    .blog-news-content{
+        .blog-news-slider{
+            .owl-stage-outer{
+                .owl-stage{
+                }
+            }
+            .item{
+                a{
+                    background-color: $white;
+                    border-radius: 4px;
+                    border: 1px solid #DADADA;
+                    padding: 10px 12px 40px 12px;
+
+                    img{
+                        border-radius: 4px;
+                        margin: 0 0 17px 0;
+                        height: auto;
+                        width: 100%;
+                    }
+                    h6{
+                        color: #9698A5;
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-align: left;
+                        margin: 0 0 10px 0;
+                    }
+                    h4{
+                        color: #414141;
+                        font-size: 24px;
+                        font-weight: 700;
+                        text-align: left;
+                        margin: 0 0 10px 0;
+                    }
+                    p{
+                        color: #4F4F4F;
+                        font-size: 14px;
+                        font-weight: 400;
+                        text-align: left;
+                        margin: 0 0 15px 0;
+                    }
+                    span{
+                        display: inline-block;
+                        color: $green;
+                        position: relative;
+                        padding: 0 27px 0 0;
+
+                        &::after{
+                            position: absolute;
+                            content: "";
+                            background: url("../../img/blog-news/arrow-up.svg") no-repeat;
+                            background-size: cover;
+                            height: 13.15px;
+                            width: 13.49px;
+                            right: 0;
+                            bottom: 3px;
+                        }
+                    }
+                }
+            }
+            .owl-nav{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: -109px;
+                right: 0;
+
+                .owl-prev,
+                .owl-next{
+                    background-color: $green;
+                    border-radius: 24px;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: center;
+                    height: 70px;
+                    width: 70px;
+                    transition: ease-in-out 0.2s;
+                
+                    &:hover{
+                        background-color: #0cd170;
+                    }
+
+                    span{
+                        background-size: cover;
+                        filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7480%) hue-rotate(200deg) brightness(108%) contrast(106%);
+                        font-size: 0;
+                        height: 28px;
+                        width: 28px;
+                    }
+                }
+
+                .owl-prev{
+                    span{
+                        background: url("./../../img/icons/left-arrow.svg") no-repeat;
+                    }
+                }
+                .owl-next{
+                    margin: 0 0px 0 22px;
+                    span{
+                        background: url("./../../img/icons/right-arrow.svg") no-repeat;
+                    }
+                }
+            }
+            .owl-dots{
+                margin: 23px auto 0 auto;
+                text-align: center;
+
+                .owl-dot{
+                    background-color: #B7B7B7;
+                    border-radius: 50%;
+                    margin: 0 4px;
+                    height: 11px;
+                    width: 11px;
+
+                    &.active{
+                        background-color: #4781FF;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .blog-news{
+        .blog-news-header{
+            h2{}
+        }
+        .blog-news-content{
+            .blog-news-slider{
+                .owl-stage-outer{
+                    .owl-stage{}
+                }
+                .item{
+                    a{
+                        img{
+                        }
+                    }
+                }
+                .owl-nav{
+                    justify-content: space-between;
+                    top: 75px;
+                    right: -15%;
+                    width: 130%;
+
+                    .owl-prev,
+                    .owl-next{
+                        span{}
+                    }
+                    .owl-prev{
+                        span{}
+                    }
+                    .owl-next{
+                        span{}
+                    }
+                }
+                .owl-dots{
+                    .owl-dot{
+                        &.active{}
+                    }
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 640px){
+    .blog-news{
+        .blog-news-header{
+            h2{}
+        }
+        .blog-news-content{
+            .blog-news-slider{
+                .owl-stage-outer{
+                    .owl-stage{}
+                }
+                .item{
+                    a{
+                    }
+                }
+                .owl-nav{
+                    display: none;
+
+                    .owl-prev,
+                    .owl-next{
+                        span{}
+                    }
+                    .owl-prev{
+                        span{}
+                    }
+                    .owl-next{
+                        span{}
+                    }
+                }
+                .owl-dots{
+                    .owl-dot{
+                        &.active{}
+                    }
+                }
+            }
+        }
+    }
+}

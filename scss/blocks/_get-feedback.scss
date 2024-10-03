@@ -12,6 +12,134 @@
     }
 }
 
+/* page facilities */
+.page-facilities{
+    .get-feedback{
+        margin: 0 0 -90px 0;
+
+        .get-feedback-wrapper{
+            &::before{
+                background: url("./../../img/page-faq/consult2.webp") no-repeat right bottom;
+                background-size: contain;
+                left: 35%;
+                max-width: 360px;
+            }
+            .get-feedback-form{
+                max-width: 600px;
+
+                .get-feedback-form-title{}
+                form{
+                    max-width: 320px;
+
+                    input{
+                        background-color: $white;
+                    }
+                    button{
+
+                    }
+                    .form-sub{
+                        display: block;
+                    }
+                }
+                .get-feedback-form-social{
+                    h5{
+                        max-width: 320px;
+                        text-align: center;
+                    }
+                    .get-feedback-form-social-links{
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        max-width: 320px;
+
+                        a{
+                            display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 50%;
+                            margin: 0;
+                            height: 42px;
+                            width: 42px;
+
+                            &.vk{
+                                background: #29A8EB;
+
+                                span{
+                                    background: url("./../../img/facilities/vk.svg") no-repeat;
+                                    height: 14px;
+                                    width: 24px;
+                                }
+                            }
+                            &.whatsapp{
+                                background: #0CBB65;
+                                margin: 0 10px;
+
+                                span{
+                                    background: url("./../../img/facilities/whatsapp.svg") no-repeat;
+                                    top: -1px;
+                                    left: 1px;
+                                    height: 22px;
+                                    width: 21px;
+                                }
+                            }
+                            &.telegram{
+                                background: #29A8EB;
+
+                                span{
+                                    background: url("./../../img/facilities/telegram.svg") no-repeat;
+                                    top: 1px;
+                                    left: -1px;
+                                    height: 19px;
+                                    width: 17px;
+                                }
+                            }
+
+                            span{
+                                display: block;
+                                position: relative;
+                            }
+                        }
+                    }
+                }
+            }
+            .get-feedback-consult{
+                bottom: -45px;
+                left: 41%;
+            }
+            .get-feedback-consult-list{
+                width: 100%;
+                max-width: 320px;
+
+                div{
+                    margin: 0 0 20px 0;
+
+                    &:last-child{
+                        margin: 0;
+                    }
+
+                    span{
+                        background: url("./../../img/icons/check-circle.svg") no-repeat;
+                        display: block;
+                        border-radius: 50%;
+                        height: 39px;
+                        width: 39px;
+                        margin: 0 0 15px 0;
+                    }
+                    p{
+                        color: $white;
+                        font-size: 18px;
+                        font-weight: 600;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+
 /* page our contacts */
 .page-our-contacts{
     .get-feedback{
@@ -50,6 +178,7 @@
     padding: 90px 0;
     margin: 0 0 90px 0;
     color: $white;
+    z-index: 1;
 
     .get-feedback-wrapper{
         display: flex;
@@ -231,6 +360,53 @@
     background-color: #218838; /* Цвет фона при наведении */
 }
 
+@media only screen and (max-width: 1024px){
+    .page-facilities{
+        .get-feedback{
+            .get-feedback-wrapper{
+                &::before{
+                    left: 47%;
+                }
+                .get-feedback-form{
+                    .get-feedback-form-title{}
+                    form{
+                        input{}
+                        button{}
+                        .form-sub{}
+                    }
+                    .get-feedback-form-social{
+                        h5{}
+                        .get-feedback-form-social-links{
+                            a{
+                                &.vk{
+                                    span{}
+                                }
+                                &.whatsapp{
+                                    span{}
+                                }
+                                &.telegram{
+                                    span{}
+                                }
+                                span{}
+                            }
+                        }
+                    }
+                }
+                .get-feedback-consult{
+                    left: 54%;
+                }
+                .get-feedback-consult-list{
+                    display: none;
+                    div{
+                        &:last-child{}
+                        span{}
+                        p{}
+                    }
+                }
+            }
+        }
+    }
+}
 @media only screen and (max-width: 980px){
     .get-feedback{
         .get-feedback-wrapper{
@@ -275,8 +451,55 @@
         }
     }
 }
-
 @media only screen and (max-width: 768px){
+    .page-facilities{
+        .get-feedback{
+            margin: 0;
+
+            .get-feedback-wrapper{
+                &::before{}
+                .get-feedback-form{
+                    .get-feedback-form-title{}
+                    form{
+                        max-width: none;
+
+                        input{}
+                        button{}
+                        .form-sub{}
+                    }
+                    .get-feedback-form-social{
+                        h5{
+                            max-width: none;
+                        }
+                        .get-feedback-form-social-links{
+                            max-width: none;
+
+                            a{
+                                &.vk{
+                                    span{}
+                                }
+                                &.whatsapp{
+                                    span{}
+                                }
+                                &.telegram{
+                                    span{}
+                                }
+                                span{}
+                            }
+                        }
+                    }
+                }
+                .get-feedback-consult{}
+                .get-feedback-consult-list{
+                    div{
+                        &:last-child{}
+                        span{}
+                        p{}
+                    }
+                }
+            }
+        }
+    }
     .get-feedback{
         .get-feedback-wrapper{
             &::before{

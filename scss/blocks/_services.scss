@@ -75,7 +75,18 @@
     }
 }
 
+.page-facilities{
+    .services{
+        margin: 120px 0 0 0;
+    }
+}
+
 @media only screen and (max-width: 1024px){
+    .page-facilities{
+        .services{
+            margin: 60px 0 30px 0;
+        }
+    }
     .page-services{
         .main{
             .services{
