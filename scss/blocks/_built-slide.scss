@@ -1,10 +1,11 @@
 @import "./../base/vars";
 
-.blog-news{
+.built-slide{
     position: relative;
     margin: 0 0 75px 0;
+    padding: 100px 0 0 0;
 
-    .blog-news-header{
+    .built-slide-header{
         margin: 0 0 47px 0;
 
         h2{
@@ -13,26 +14,55 @@
             width: calc(100% - 180px);
         }
     }
-    .blog-news-content{
-        .blog-news-slider{
+    .built-slide-content{
+        .built-slide-tabs{
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+
+            .built-slide-tab{
+                background: #F8F8F8;
+                border: 1px solid #DFDFDF;
+                border-radius: 26px;
+                color: #303030;
+                display: inline-block;
+                font-size: 18px;
+                font-weight: 400;
+                margin: 0 20px 20px 0;
+                padding: 13px 21px;
+                text-align: center;
+
+                &.active{
+                    background: $green;
+                    border: 1px solid $green;
+                    color: $white;
+                }
+            }
+        }
+        .general-item-slider{
+            margin: 35px 0 0 0;
+
+            &.hidden{
+                display: none;
+            }
+        }
+        .built-slide-slider{
+            position:unset;
+
             .owl-stage-outer{
                 .owl-stage{
-                    display: flex;
-                    align-items: stretch;
+                    // display: flex;
+                    // align-items: stretch;
 
-                    .owl-item{
-                        margin-left: 3px;
-                    }
+                    .owl-item{}
                 }
             }
             .item{
-                height: 100%;
+                // height: 100%;
 
                 a{
-                    background-color: $white;
-                    border-radius: 4px;
-                    border: 1px solid #DADADA;
-                    padding: 10px 12px 40px 12px;
                     height: 100%;
 
                     img{
@@ -71,7 +101,7 @@
                         &::after{
                             position: absolute;
                             content: "";
-                            background: url("../../img/blog-news/arrow-up.svg") no-repeat;
+                            background: url("../../img/built-slide/arrow-up.svg") no-repeat;
                             background-size: cover;
                             height: 13.15px;
                             width: 13.49px;
@@ -87,8 +117,8 @@
                 align-items: center;
                 justify-content: center;
                 position: absolute;
-                top: -109px;
-                right: 0;
+                top: -8px;
+                right: 5px;
 
                 .owl-prev,
                 .owl-next{
@@ -148,12 +178,19 @@
 }
 
 @media only screen and (max-width: 768px){
-    .blog-news{
-        .blog-news-header{
-            h2{}
+    .built-slide{
+        .built-slide-header{
+            h2{
+                width: 100%;
+            }
         }
-        .blog-news-content{
-            .blog-news-slider{
+        .built-slide-content{
+            .built-slide-tabs{
+                a{
+                    width: 100%;
+                }
+            }
+            .built-slide-slider{
                 .owl-stage-outer{
                     .owl-stage{}
                 }
@@ -164,10 +201,7 @@
                     }
                 }
                 .owl-nav{
-                    justify-content: space-between;
-                    top: 75px;
-                    right: -15%;
-                    width: 130%;
+                    display: none;
 
                     .owl-prev,
                     .owl-next{
@@ -190,12 +224,12 @@
     }
 }
 @media only screen and (max-width: 640px){
-    .blog-news{
-        .blog-news-header{
+    .built-slide{
+        .built-slide-header{
             h2{}
         }
-        .blog-news-content{
-            .blog-news-slider{
+        .built-slide-content{
+            .built-slide-slider{
                 .owl-stage-outer{
                     .owl-stage{}
                 }
@@ -204,8 +238,6 @@
                     }
                 }
                 .owl-nav{
-                    display: none;
-
                     .owl-prev,
                     .owl-next{
                         span{}

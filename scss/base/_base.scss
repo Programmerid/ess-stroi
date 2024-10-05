@@ -9,16 +9,14 @@
     font-style: normal;
 }
 
-// body {
-//     font-family:'Montserrat', sans-serif;
-//     font-size: 16px;
-//     font-weight: 400;
-//     letter-spacing: 0;
-//     line-height: 1.2;
-//     margin: 0;
-//     height: 100%;
-//     min-width: 360px;
-// }
+body {
+    margin: 120px 0 0 0;
+}
+@media only screen and (max-width: 1024px){
+    body {
+        margin: 60px 0 0 0;
+    }
+}
 
 // *{
 //     font-family: 'Montserrat';

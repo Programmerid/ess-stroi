@@ -2,6 +2,7 @@
 
 .stocks{
     background: linear-gradient(180deg, #E7EDF2 0%, rgba(231, 237, 242, 0) 90.8%);
+    margin: 120px 0 0 0;
     padding: 90px 0 75px;
 
     .stocks-header{
@@ -77,6 +78,12 @@
     }
 }
 
+@media only screen and (max-width: 1024px){
+    .stocks{
+        margin: 60px 0 0 0;
+        padding: 60px 0 50px;
+    } 
+}
 @media only screen and (max-width: 980px){
     .stocks{
         .stocks-header{

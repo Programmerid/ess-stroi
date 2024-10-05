@@ -1,0 +1,49 @@
+@import "./../base/vars";
+.progress-line{
+    padding: 50px 0 100px;
+    width: 100%;
+
+    .progress-line-items{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-between;
+        max-width: 1210px;
+        padding: 0 5px;
+        margin: 0 auto;
+
+        .progress-line-item{
+            width: 24%;
+
+            P{
+                color: $black;
+                font-size: 20px;
+                font-weight: 400;
+                padding: 0 0 50px 0;
+                text-align: center;
+                position: relative;
+
+                &::before{
+                    background-color: $green;
+                    border-radius: 50%;
+                    content: "";
+                    position: absolute;
+                    left: calc(50% - 6px);
+                    bottom: -6px;
+                    height: 12px;
+                    width: 12px;
+                }
+            }
+        }
+    }
+    .progress-line-bar{
+        background-color: $blue;
+        height: 1px;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 768px){
+    .progress-line{
+        display: none;
+    }
+}

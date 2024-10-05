@@ -218,6 +218,62 @@ $(document).ready(function(){
     }
   });
 
+  // ===== Slider Built Slide =====
+  $('.built-slide-slider.owl-carousel').owlCarousel({
+    stagePadding: 10,
+    items: 4,
+    nav: true,
+    margin: 10,
+    dots: true,
+    responsiveClass:true,
+    responsive:{
+      1280:{
+        items:4
+      },
+      760:{
+        items:3
+      },
+      480:{
+        items:2
+      }
+        
+    }
+  });
+
+  // ===== Секция Построенные дома =====
+  (function() {
+    // Получаем все вкладки и слайдеры
+    const tabs = document.querySelectorAll('.built-slide-tab');
+    const sliders = document.querySelectorAll('.general-item-slider');
+
+    // Изначально скрываем все слайдеры, кроме первого
+    sliders.forEach((slider, index) => {
+      if (index !== 0) {
+        slider.classList.add('hidden');
+      }
+    });
+
+    // Добавляем событие клика на каждую вкладку
+    tabs.forEach((tab, index) => {
+      tab.addEventListener('click', function(event) {
+        event.preventDefault(); // предотвращаем стандартное поведение ссылки
+
+        // Убираем класс active у всех вкладок
+        tabs.forEach(t => t.classList.remove('active'));
+
+        // Добавляем класс active к текущей вкладке
+        tab.classList.add('active');
+
+        // Скрываем все слайдеры
+        sliders.forEach(slider => slider.classList.add('hidden'));
+
+        // Показываем соответствующий слайдер
+        sliders[index].classList.remove('hidden');
+      });
+    });
+  })();
+
+
   //service item
 
   // Старый код для открывания услуг
