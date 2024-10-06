@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge" />
   <meta name="ЕСС" content="ЕСС" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
   <title>Строительства домов в Краснодарском крае - ЕСС</title>
-  <meta name="description"
-    content="ЕСС - группа строительных компаний полного цикла в Краснодарском крае. Строительство домов под ключ (быстровызводимые за 1-2 месяца и капитальные 3-6 месяцев) с отделкой, коммуникациями и благоустройством. Гарантия до 10 лет, фиксированные цены и высокое качество материалов. Бесплатный расчет стоимости онлайн.">
+  <meta name="description" content="ЕСС - группа строительных компаний полного цикла в Краснодарском крае. Строительство домов под ключ (быстровызводимые за 1-2 месяца и капитальные 3-6 месяцев) с отделкой, коммуникациями и благоустройством. Гарантия до 10 лет, фиксированные цены и высокое качество материалов. Бесплатный расчет стоимости онлайн.">
   <link rel="icon" type="image/png" href="img/logo-icon.jpg">
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
@@ -16,7 +14,8 @@
   <link rel="stylesheet" href="css/owl.carousel.min.css" />
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/main.css" />
-  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"/> -->
+  <!-- All new style by Mikhail -->
+  <link rel="stylesheet" href="./scss/main/main.css">
   <!-- Marquiz script start -->
   <script>
     (function (w, d, s, o) {
@@ -39,9 +38,6 @@
     );
   </script>
   <!-- Marquiz script end -->
-  <link rel="stylesheet" href="./scss/main/main.css">
-  <!-- <link rel="stylesheet" href="./plugins/owl-carousel/scss/owl.carousel.min.css">
-    <link rel="stylesheet" href="./plugins/owl-carousel/scss/owl.theme.default.min.css"> -->
 </head>
 
 <body class="page-facilities">
@@ -53,7 +49,7 @@
         <div class="header__top">
           <div class="header-logo">
             <div class="header-logo__pic">
-              <img src="img/logo.svg" alt="">
+              <img src="img/logo.svg" alt="ЕСС">
             </div>
             <div class="header-logo__main">
               <div class="header-logo__name">
@@ -65,20 +61,22 @@
           </div>
           <nav class="header-supnav mob-hide">
             <ul>
-              <li><a href="#actions" class="js-scroll">Акции</a></li>
-              <!--              <li><a href="#faq" class="js-scroll">FAQ</a></li>-->
-              <!--              <li><a href="#blog" class="js-scroll">Блог</a></li>-->
+              <li><a href="/stock.html">Акции</a></li>
+              <li><a href="/faq.html">FAQ</a></li>
+              <li><a href="/blog.html">Блог</a></li>
             </ul>
           </nav>
           <a href="#calc" class="header-calc mob-hide js-scroll">
-            <img src="img/calc-icn.svg" alt="">
+            <img src="img/calc-icn.svg" alt="Калькулятор стоимости">
             <span>Калькулятор стоимости</span>
           </a>
           <div class="header-soc">
             <div class="header-soc__title mob-hide">Задайте вопрос online</div>
             <ul>
-              <li><a href="https://wa.me/+79628800911" target="_blank" title="Whatsapp"><img src="img/whatsapp.svg"
-                    alt="Whatsapp"></a></li>
+              <li>
+                <a href="https://wa.me/+79628800911" target="_blank" title="Whatsapp">
+                  <img src="img/whatsapp.svg" alt="Whatsapp"></a>
+              </li>
               <li><a href="https://t.me/ECC_stroygrupp" target="_blank" title="Telegram"><img src="img/telegram.svg"
                     alt="Telegram"></a></li>
               <li><a href="#calc" class="desc-hide js-scroll"><img src="img/calc-icn.svg" alt=""></a></li>
@@ -95,13 +93,13 @@
         </div>
         <nav class="header-nav mob-hide">
           <ul>
-            <li><a href="#hero" class="js-scroll">Главная</a></li>
-            <li><a href="#services" class="js-scroll">Услуги</a></li><!-- #services -->
-            <li><a href="#projects" class="js-scroll">Выполненные проекты</a></li>
-            <li><a href="#reviews" class="js-scroll">Отзывы</a></li>
-            <li><a href="#about" class="js-scroll">О компании</a></li>
-            <!--            <li><a href="#gallery" class="js-scroll">Галерея работ</a></li>-->
-            <li><a href="#contacts" class="js-scroll">Контакты</a></li>
+            <li><a href="/index.html">Главная</a></li>
+            <li><a href="/services.html">Услуги</a></li>
+            <li><a href="/houses-built.html">Выполненные проекты</a></li>
+            <li><a href="/feedback.html">Отзывы</a></li>
+            <li><a href="/final.html">О компании</a></li>
+            <li><a href="/services-type.html">Галерея работ</a></li>
+            <li><a href="/contacts.html">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -113,25 +111,30 @@
     <div class="mob-menu__wrap">
       <nav class="mob-menu-nav">
         <ul>
-          <li><a href="#hero" class="js-scroll">Главная</a></li>
-          <li><a href="#services" class="js-scroll">Услуги</a></li>
-          <li><a href="#projects" class="js-scroll">Выполненные проекты</a></li>
-          <li><a href="#reviews" class="js-scroll">Отзывы</a></li>
-          <li><a href="#about" class="js-scroll">О компании</a></li>
-          <!--          <li><a href="#gallery" class="js-scroll">Галерея работ</a></li>-->
-          <li><a href="#contacts" class="js-scroll">Контакты</a></li>
-          <li><a href="#actions" class="js-scroll">Акции</a></li>
-          <!--          <li><a href="#faq" class="js-scroll">FAQ</a></li>-->
-          <!--          <li><a href="#blog" class="js-scroll">Блог</a></li>-->
+          <li><a href="/index.html">Главная</a></li>
+          <li><a href="/services.html">Услуги</a></li>
+          <li><a href="/houses-built.html">Выполненные проекты</a></li>
+          <li><a href="/feedback.html">Отзывы</a></li>
+          <li><a href="/final.html">О компании</a></li>
+          <li><a href="/services-type.html">Галерея работ</a></li>
+          <li><a href="/contacts.html">Контакты</a></li>
+          <li><a href="/stock.html">Акции</a></li>
+          <li><a href="/faq.html">FAQ</a></li>
+          <li><a href="/blog.html">Блог</a></li>
         </ul>
       </nav>
       <div class="header-soc mob-menu-soc">
         <div class="header-soc__title">Задайте вопрос online</div>
         <ul>
-          <li><a href="https://wa.me/+79628800911" target="_blank" title="Whatsapp"><img src="img/whatsapp.svg"
-                alt="Whatsapp"></a></li>
-          <li><a href="https://t.me/ECC_stroygrupp" target="_blank" title="Telegram"><img src="img/telegram.svg"
-                alt="Telegram"></a></li>
+          <li>
+            <a href="https://wa.me/+79628800911" target="_blank" title="Whatsapp">
+              <img src="img/whatsapp.svg" alt="Whatsapp">
+            </a>
+          </li>
+          <li><a href="https://t.me/ECC_stroygrupp" target="_blank" title="Telegram">
+            <img src="img/telegram.svg" alt="Telegram">
+            </a>
+          </li>
         </ul>
       </div>
       <div class="header-contacts mob-menu-contacts">
@@ -2077,16 +2080,16 @@
           </div>
           <nav class="footer-nav">
             <ul>
-              <li><a href="#hero" class="js-scroll">Главная</a></li>
-              <li><a href="#services" class="js-scroll">Услуги</a></li>
-              <li><a href="#projects" class="js-scroll">Выполненные проекты</a></li>
-              <li><a href="#reviews" class="js-scroll">Отзывы</a></li>
-              <li><a href="#about" class="js-scroll">О компании</a></li>
-              <!--              <li><a href="#gallery" class="js-scroll">Галерея работ</a></li>              -->
-              <!--              <li><a href="#blog" class="js-scroll">Блог</a></li>-->
-              <!--              <li><a href="#faq" class="js-scroll">FAQ</a></li>-->
-              <li><a href="#actions" class="js-scroll">Акции</a></li>
-              <li><a href="#contacts" class="js-scroll">Контакты</a></li>
+              <li><a href="/index.html">Главная</a></li>
+              <li><a href="/services.html">Услуги</a></li>
+              <li><a href="/houses-built.html">Выполненные проекты</a></li>
+              <li><a href="/feedback.html">Отзывы</a></li>
+              <li><a href="/final.html">О компании</a></li>
+              <li><a href="/services-type.html">Галерея работ</a></li>
+              <li><a href="/blog.html">Блог</a></li>
+              <li><a href="/faq.html">FAQ</a></li>
+              <li><a href="/stock.html">Акции</a></li>
+              <li><a href="/contacts.html">Контакты</a></li>
             </ul>
           </nav>
           <div class="footer-contacts">
@@ -2099,16 +2102,19 @@
               <div class="footer-soc__title">Напишите нам, мы <br>сейчас онлайн</div>
               <ul>
                 <li>
-                  <a href="https://vk.com/ess.stroy" target="_blank" title="Вконтакте"><img src="img/vk.svg"
-                      alt="Вконтакте"></a>
+                  <a href="https://vk.com/ess.stroy" target="_blank" title="Вконтакте">
+                    <img src="img/vk.svg" alt="Вконтакте">
+                  </a>
                 </li>
                 <li>
-                  <a href="https://wa.me/+79628800911" target="_blank" title="Whatsapp"><img src="img/whatsapp.svg"
-                      alt="Whatsapp"></a>
+                  <a href="https://wa.me/+79628800911" target="_blank" title="Whatsapp">
+                    <img src="img/whatsapp.svg" alt="Whatsapp">
+                  </a>
                 </li>
                 <li>
-                  <a href="https://t.me/ECC_stroygrupp" target="_blank" title="Telegram"><img src="img/telegram.svg"
-                      alt="Telegram"></a>
+                  <a href="https://t.me/ECC_stroygrupp" target="_blank" title="Telegram">
+                    <img src="img/telegram.svg" alt="Telegram">
+                  </a>
                 </li>
               </ul>
             </div>

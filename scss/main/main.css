@@ -2299,4 +2299,76 @@ h1 {
   .progress-line {
     display: none;
   }
+}
+.final-build {
+  padding: 80px 0 100px;
+}
+.final-build .final-build-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 60px 0;
+}
+.final-build .final-build-item:last-child {
+  margin: 0;
+}
+.final-build .final-build-item .final-build-item-text {
+  width: 48%;
+}
+.final-build .final-build-item .final-build-item-text h3 {
+  color: #000000;
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.final-build .final-build-item .final-build-item-text p {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+}
+.final-build .final-build-item .final-build-item-text p:last-child {
+  margin: 0;
+}
+.final-build .final-build-item .final-build-item-text h5 {
+  color: #000000;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.final-build .final-build-item .final-build-item-text ul {
+  padding: 0 0 0 19px;
+}
+.final-build .final-build-item .final-build-item-text ul li {
+  color: #000000;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 0 0 25px 0;
+  list-style: disc;
+}
+.final-build .final-build-item .final-build-item-img {
+  width: 48%;
+}
+.final-build .final-build-item .final-build-item-img img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 980px) {
+  .final-build {
+    padding: 50px 0 100px;
+  }
+  .final-build .final-build-item {
+    flex-direction: column;
+    margin: 0 0 50px 0;
+  }
+  .final-build .final-build-item .final-build-item-text {
+    margin: 0 0 20px 0;
+    order: 1;
+    width: 100%;
+  }
+  .final-build .final-build-item .final-build-item-img {
+    order: 2;
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */
