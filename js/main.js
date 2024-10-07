@@ -164,10 +164,9 @@ $(document).ready(function(){
       480:{
         items:2
       },
-      340:{
+      320:{
         items:1
-      }
-        
+      }        
     }
   });
 
@@ -189,10 +188,9 @@ $(document).ready(function(){
       480:{
         items:2
       },
-      340:{
+      320:{
         items:1
-      }
-        
+      }        
     }
   });
 
@@ -213,8 +211,10 @@ $(document).ready(function(){
       },
       480:{
         items:1
-      }
-        
+      },
+      320:{
+        items:1
+      }        
     }
   });
 
@@ -235,8 +235,34 @@ $(document).ready(function(){
       },
       480:{
         items:2
-      }
-        
+      },
+      320:{
+        items:2
+      }        
+    }
+  });
+
+  // ===== Slider Built Slide =====
+  $('.news-slider-slider.owl-carousel').owlCarousel({
+    stagePadding: 10,
+    items: 4,
+    nav: true,
+    margin: 10,
+    dots: true,
+    responsiveClass:true,
+    responsive:{
+      1280:{
+        items:4
+      },
+      760:{
+        items:3
+      },
+      480:{
+        items:2
+      },
+      320:{
+        items:2
+      }        
     }
   });
 
