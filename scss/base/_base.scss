@@ -76,6 +76,25 @@ input::-webkit-inner-spin-button {
     }
 }
 
+body #pbThumbsToggler:checked ~ .pbWrapper{
+    display: flex;
+
+    .zoomable{
+        margin: auto;
+    }
+
+    img{
+        margin: auto;
+    }
+}
+body .pbWrapper{
+    display: flex;
+    
+    img{
+        margin: auto;
+    }
+}
+
 /* ==================== General Wrappers ==================== */
 // .main_content {
 //     flex: 1 1 auto;

@@ -2168,8 +2168,8 @@
   background-color: #0CBB65;
   backdrop-filter: unset;
 }
-.prev,
-.next{
+.swiper-wrapper .prev,
+.swiper-wrapper .next{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -2182,12 +2182,12 @@
   background-color: #0CBB65;
   z-index: 10;
 }
-.prev img,
-.next img{width: 18px;}
-.prev:hover,
-.next:hover{background-color: #1FD37B;}
-.prev:active,
-.next:active{background-color: #10A059;}
+.swiper-wrapper .prev img,
+.swiper-wrapper .next img{width: 18px;}
+.swiper-wrapper .prev:hover,
+.swiper-wrapper .next:hover{background-color: #1FD37B;}
+.swiper-wrapper .prev:active,
+.swiper-wrapper .next:active{background-color: #10A059;}
 .prev.swiper-button-disabled,
 .next.swiper-button-disabled{
   background-color: rgba(24, 24, 26, .47);

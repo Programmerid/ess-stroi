@@ -122,6 +122,23 @@ input::-webkit-inner-spin-button {
   text-decoration: none;
   transition: ease-in-out 0.2s;
 }
+body #pbThumbsToggler:checked ~ .pbWrapper {
+  display: flex;
+}
+body #pbThumbsToggler:checked ~ .pbWrapper .zoomable {
+  margin: auto;
+}
+body #pbThumbsToggler:checked ~ .pbWrapper img {
+  margin: auto;
+}
+
+body .pbWrapper {
+  display: flex;
+}
+body .pbWrapper img {
+  margin: auto;
+}
+
 /* ==================== General Wrappers ==================== */
 .page-services {
   padding: 105px 0 0 0;
@@ -1385,6 +1402,11 @@ h1 {
 }
 .subscribe .subscribe-content .subscribe-content-right a {
   margin: 0 30px 0 0;
+  opacity: 1;
+  transition: ease-in-out 0.2s;
+}
+.subscribe .subscribe-content .subscribe-content-right a:hover {
+  opacity: 0.9;
 }
 .subscribe .subscribe-content .subscribe-content-right a.vk-link {
   min-height: 55px;
