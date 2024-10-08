@@ -1108,9 +1108,12 @@ h1 {
   max-width: none;
 }
 .get-feedback .get-feedback-wrapper .get-feedback-form form .form-sub input {
+  cursor: pointer;
   margin: 0 7px 0 0;
-  height: 20px;
-  width: 20px;
+  min-height: 20px;
+  min-width: 20px;
+  max-height: 20px;
+  max-width: 20px;
 }
 .get-feedback .get-feedback-wrapper .get-feedback-form form .form-sub p {
   color: #818181;
@@ -1148,6 +1151,11 @@ h1 {
 .get-feedback .get-feedback-wrapper .get-feedback-form .get-feedback-form-social-links a {
   height: 37px;
   width: 37px;
+  opacity: 1;
+  transition: ease-in-out 0.2s;
+}
+.get-feedback .get-feedback-wrapper .get-feedback-form .get-feedback-form-social-links a:hover {
+  opacity: 0.9;
 }
 .get-feedback .get-feedback-wrapper .get-feedback-form .get-feedback-form-social-links a:first-child {
   margin: 0 10px 0 0;

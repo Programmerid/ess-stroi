@@ -234,9 +234,12 @@
                     max-width: none;
 
                     input{
+                        cursor: pointer;
                         margin: 0 7px 0 0;
-                        height: 20px;
-                        width: 20px;
+                        min-height: 20px;
+                        min-width: 20px;
+                        max-height: 20px;
+                        max-width: 20px;
                     }
                     p{
                         color: #818181;
@@ -282,6 +285,12 @@
                 a{
                     height: 37px;
                     width: 37px;
+                    opacity: 1;
+                    transition: ease-in-out 0.2s;
+
+                    &:hover{
+                        opacity: 0.9;
+                    }
     
                     &:first-child{
                         margin: 0 10px 0 0;
