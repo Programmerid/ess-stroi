@@ -1,0 +1,246 @@
+@import "./../base/vars";
+
+.business-service{
+    padding: 200px 0 65px;
+
+    // === header
+    .business-service-header{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 50px;
+
+        h2{
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 120%;
+            color: #303030;
+            max-width: 300px;
+
+            span{
+                font-weight: 700;
+                color: #18181A;
+            }
+        }
+        .head-br{
+            flex-grow: 1;
+            background-color: #BEC0CA;
+            height: 1px;
+            margin-top: 25px;
+        }
+        p{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 120%;
+            text-align: right;
+            letter-spacing: 4px;
+            color: #9698A5;
+            margin-top: 16px;
+        }
+    }
+    // === options
+    .business-service-options{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 0 0 25px 0;
+        position: relative;
+
+        &::before{
+            background: url("../../img/lizing/consult.png") no-repeat;
+            background-size: cover;
+            content: "";
+            position: absolute;
+            left: calc(50% - 13%);
+            bottom: -26px;
+            width: 26%;
+            height: 113%;
+            z-index: 1;
+        }
+
+       .business-service-option{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        &:nth-child(1){
+            align-items: flex-start;
+            margin: 0 0 90px 0;
+
+            .business-service-option-top{
+                margin: 0 0 14px 0;
+
+                .business-service-option-img{
+                    margin: 0 28px 0 0;
+
+                    img{
+                        height: 37.3px;
+                        width: 78px;
+                    }
+                }
+            }
+        }
+        &:nth-child(2){
+            align-items: flex-end;
+            margin: 0 0 90px 0;
+
+            .business-service-option-top{
+                flex-direction: row-reverse;
+                margin: 0 0 14px 0;
+
+                .business-service-option-img{
+                    margin: 0 0 0 28px;
+
+                    img{
+                        height: 73px;
+                        width: 73px;
+                    }
+                }
+            }
+        }
+        &:nth-child(3){
+            align-items: flex-start;
+
+            .business-service-option-top{
+                margin: 28px 0 0 0;
+                
+                .business-service-option-img{
+                    margin: 0 28px 0 0;
+
+                    img{
+                        height: 70px;
+                        width: 70px;
+                    }
+                }
+            }
+        }
+        &:nth-child(4){
+            align-items: flex-end;
+
+            .business-service-option-top{
+                flex-direction: row-reverse;
+                margin: 28px 0 0 0;
+
+                .business-service-option-img{
+                    margin: 0 0 0 28px;
+
+                    img{
+                        height: 56px;
+                        width: 79px;
+                    }
+                }
+            }
+        }
+
+        p{
+            color: $black;
+            font-size: 14px;
+            font-weight: 300;
+            max-width: 370px;
+        }
+        .business-service-option-top{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            max-width: 370px;
+
+            .business-service-option-img{
+                background-color: #EBE5E0;
+                border-radius: 16px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                min-height: 125px;
+                min-width: 125px;
+                max-height: 150px;
+                max-width: 150px;
+
+                img{}
+            }
+            h5{
+                color: $black;
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+       } 
+    }
+    // === calc
+    .business-service-calc{
+        background: url("./../../img/lizing/calc-bg.png") no-repeat center;
+        background-size: cover;
+        background-color: #252322;
+        border-radius: 16px;
+        padding: 18px 45px 60px;
+        text-align: center;
+
+        .business-service-calc-header{
+            border-bottom: 1px solid #FFFFFF1A;
+            margin: 0 auto;
+            padding: 0 0 22px 0;
+            width: 100%;
+            max-width: 1100px;
+
+            h6{
+                color: $white;
+                font-size: 18px;
+                font-weight: 600;
+                margin: 0 0 5px 0;
+            }
+            p{
+                color: #B9B9B9;
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+        .business-service-calc-content{
+            margin: 36px 0 0 0;
+            width: 100%;
+
+            .business-service-calc-title{
+                margin: 0 0 46px 0;
+                width: 100%;
+
+                h3{
+                    color: $white;
+                    font-size: 31px;
+                    font-weight: 600;
+                    margin: 0 0 20px 0;
+                }
+                p{
+                    color: #CDCDCD;
+                    font-size: 16px;
+                    font-weight: 300;
+                }
+            }
+            .business-service-calc-form{
+                div{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 0 0 26px 0;
+
+                    input{
+                        width: 24%;
+                    }
+                }
+                button{
+                    margin: 0 auto;
+                    width: 100%;
+                    max-width: 554px;
+                }
+            }
+        }
+        
+    }
+}
+
+@media only screen and (max-width: 1024px){
+
+}

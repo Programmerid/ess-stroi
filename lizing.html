@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="css/base.css" />
   <link rel="stylesheet" href="css/main.css" />
   <!-- All new style by Mikhail -->
-  <link rel="stylesheet" href="./scss/main/main.css">
+  <link rel="stylesheet" href="./scss/main/main.min.css">
   <!-- Marquiz script start -->
   <script>
     (function (w, d, s, o) {
@@ -38,449 +38,174 @@
   </script>
   <!-- Marquiz script end -->
 </head>
-<body>
+<body class="lizing">
   <div class="wrapper">
     
     <!-- header -->
-    <header class="header">
+    <header class="header-lizing">
       <div class="container">
-        <div class="header__wrap">
-          <div class="header__top">
+        <div class="header-top">
+          <div class="header-left">
             <div class="header-logo">
-              <div class="header-logo__pic">
-                <img src="img/logo.svg" alt="ЕСС">
-              </div>
-              <div class="header-logo__main">
-                <div class="header-logo__name">
-                  <img src="img/ecc.svg" alt="ЕСС">
-                </div>
-                <div class="header-logo__txt mob-hide">Группа строительных компаний полного цикла в Краснодарском крае
-                </div>
-              </div>
+              <a href="/">
+                <img src="./img/lizing/logo-header.svg" alt="есслизинг">
+              </a>
             </div>
-            <nav class="header-supnav mob-hide">
-              <ul>
-                <li><a href="/stock.html">Акции</a></li>
-                <li><a href="/faq.html">FAQ</a></li>
-                <li><a href="/blog.html">Блог</a></li>
-              </ul>
-            </nav>
-            <a href="#calc" class="header-calc mob-hide js-scroll">
-              <img src="img/calc-icn.svg" alt="Калькулятор стоимости">
-              <span>Калькулятор стоимости</span>
-            </a>
-            <div class="header-soc">
-              <div class="header-soc__title mob-hide">Задайте вопрос online</div>
-              <ul>
-                <li>
-                  <a href="https://wa.me/+79628800911" target="_blank" title="Whatsapp">
-                    <img src="img/whatsapp.svg" alt="Whatsapp"></a>
-                </li>
-                <li><a href="https://t.me/ECC_stroygrupp" target="_blank" title="Telegram"><img src="img/telegram.svg"
-                      alt="Telegram"></a></li>
-                <li><a href="#calc" class="desc-hide js-scroll"><img src="img/calc-icn.svg" alt=""></a></li>
-              </ul>
+            <div class="header-city">
+              <span></span>
+              <p>в Краснодарском крае</p>
             </div>
-            <div class="header-contacts mob-hide">
-              <div class="header-contacts__time">Ежедневно с 9:00 до 20:00</div>
-              <a href="tel:89385457888" class="header-contacts__tel">8 (938) 545-78-88</a>
-              <button class="btn header-contacts__btn js-order-btn">Заказать звонок</button>
-            </div>
-            <button class="btn header-burger desc-hide" id="js-mob-menu-btn">
-              <img src="img/burger.svg" alt="">
-            </button>
           </div>
-          <nav class="header-nav mob-hide">
-            <ul>
-              <li><a href="/index.html">Главная</a></li>
-              <li><a href="/services.html">Услуги</a></li>
-              <li><a href="/houses-built.html">Выполненные проекты</a></li>
-              <li><a href="/feedback.html">Отзывы</a></li>
-              <li><a href="/final.html">О компании</a></li>
-              <li><a href="/services-type.html">Галерея работ</a></li>
-              <li><a href="/contacts.html">Контакты</a></li>
-            </ul>
-          </nav>
+          <div class="header-right">
+            <div class="header-links">
+              <p>Задайте вопрос online</p>
+              <a href="">
+                <img src="./img/lizing/whatsapp-icon.svg" alt="whatsapp">
+              </a>
+              <a href="">
+                <img src="./img/lizing/telegram-icon.svg" alt="telegram">
+              </a>
+            </div>
+            <div class="header-call">
+              <div class="header-call-schedule">
+                <p>Ежедневно с 9:00 до 20:00</p>
+              </div>
+              <div class="header-call-phone">
+                <a href="telto:8 (938) 545-78-88">8 (938) 545-78-88</a>
+                <a href="">Заказать обратный звонок</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="header-bottom">
+          <ul>
+            <li><a href="">Услуги</a></li>
+            <li><a href="">О компании</a></li>
+            <li><a href="">Этапы работы</a></li>
+            <li><a href="">Наша команда</a></li>
+            <li><a href="">Банки-партнёры</a></li>
+            <li><a href="">Контакты</a></li>
+          </ul>
         </div>
       </div>
     </header>
 
-    <!-- mobile menu -->
-    <div class="mob-menu" id="js-mob-menu">
-      <div class="mob-menu__wrap">
-        <nav class="mob-menu-nav">
-          <ul>
-            <li><a href="/index.html">Главная</a></li>
-            <li><a href="/services.html">Услуги</a></li>
-            <li><a href="/houses-built.html">Выполненные проекты</a></li>
-            <li><a href="/feedback.html">Отзывы</a></li>
-            <li><a href="/final.html">О компании</a></li>
-            <li><a href="/services-type.html">Галерея работ</a></li>
-            <li><a href="/contacts.html">Контакты</a></li>
-            <li><a href="/stock.html">Акции</a></li>
-            <li><a href="/faq.html">FAQ</a></li>
-            <li><a href="/blog.html">Блог</a></li>
-          </ul>
-        </nav>
-        <div class="header-soc mob-menu-soc">
-          <div class="header-soc__title">Задайте вопрос online</div>
-          <ul>
-            <li>
-              <a href="https://wa.me/+79628800911" target="_blank" title="Whatsapp">
-                <img src="img/whatsapp.svg" alt="Whatsapp">
-              </a>
-            </li>
-            <li><a href="https://t.me/ECC_stroygrupp" target="_blank" title="Telegram">
-              <img src="img/telegram.svg" alt="Telegram">
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="header-contacts mob-menu-contacts">
-          <div class="header-contacts__time">Ежедневно с 9:00 до 17:00</div>
-          <a href="tel:89385457888" class="header-contacts__tel">8 (938) 545-78-88</a>
-          <button class="btn btn-primery mob-menu-order js-order-btn">Заказать звонок</button>
-        </div>
-      </div>
-    </div>
-
     <div class="main">
 
-      <section class="hero" id="hero">
+      <section class="lizing-banner">
         <div class="container">
-          <div class="hero__wrap">
-            <div class="hero__header">
-              <h1 class="hero-title">Строим <span>надежные дома</span></h1>
-              <div class="hero-sup">в Краснодарском крае</div>
-            </div>
-            <p class="hero-txt mob-hide">Под ключ, с отделкой, коммуникациями и благоустройством территории за 1-2
-              месяца для быстровозводимых и 3 - 6 месяцев для капитальных строений</p>
-            <ul class="hero-list desc-hide">
-              <li>Под ключ</li>
-              <li>С отделкой и коммуникациями</li>
-              <li>Благоустройство территории</li>
-              <li>За 1 - 6 месяцев</li>
-            </ul>
-            <div class="hero-play">
-              <a target="_blank" class="hero-play__btn" href="https://www.youtube.com/@ess-stroy">
-                <!-- <a class="hero-play__btn" href="https://www.youtube.com/" data-fancybox="video-gallery"> -->
-                <img src="img/play.svg" alt="">
-              </a>
-              <div class="hero-play__txt">
-                Посмотрите <span>видео обзор</span> наших работ
-              </div>
-            </div>
-            <div class="hero-bar">
-              <a href="#calc" class="btn btn-primery hero-bar__btn js-scroll">калькулятор стоимости</a>
-              <div class="hero-bar__icn">
-                <img src="img/left-chevrone-green.svg" alt="">
-              </div>
-              <div class="hero-bar__txt">Получите предварительный расчет стоимости “под ключ” или отдельных услуг</div>
-            </div>
-            <ul class="hero-timeline mob-hide">
-              <li>Подбор участка</li>
-              <li>Проектирование</li>
-              <li>Возведение </li>
-              <li>Благоустройство</li>
-              <li>Новоселье</li>
-            </ul>
+          <div class="lizing-banner-header">
+            <h1>Мы найдем лучшее решение и реальную экономическую выгоду для вашего лизинга</h1>
+            <p>Оптимальное решение, которое сэкономит вам деньги, время и силы - лизинговая программа от нашей компании</p>
+          </div>
+          <div class="lizing-banner-form">
+            <h5>Получите индивидуальные условия лизинга, заполните форму и наш менеджер свяжется с вами в течении 5 минут</h5>
+            <form action="php/mail.php" method="post" class="form tour-form js-form-val">
+              <input type="name" name="text" class="input" placeholder="Ваше имя">
+              <input type="tel" name="tel" class="input js-val mask-phone" placeholder="Телефон">
+              <input type="mail" name="mail" class="input" placeholder="E-mail">
+              <button class="btn btn-primery form-btn" type="submit">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</button>
+            </form>
           </div>
         </div>
       </section>
 
-      <section class="advantages">
+      <section class="statistic">
         <div class="container">
-          <div class="advantages__wrap">
-            <div class="advantage advantage--1">
-              <h2 class="advantage__title">Даем <strong>5 гарантий</strong> в договоре:</h2>
-              <ol>
-                <li>Гарантия на все виды работ - от 5 до 10 лет</li>
-                <li>Гарантия фиксированной стоимости</li>
-                <li>Гарантия качественных материалов</li>
-                <li>Гарантия соблюдения сроков</li>
-                <li>Гарантия лучшей цены</li>
-              </ol>
-              <img src="img/advantages-1-min.webp" alt="">
+          <div class="statistic-wrapper">
+            <div class="statistic-item">
+              <img src="./img/lizing/win-icon.svg" alt="Лидер рынка">
+              <h6>Лидер рынка</h6>
+              <p>лизинга на Юге России</p>
             </div>
-            <div class="advantage__col">
-              <div class="advantage advantage--2">
-                <h2 class="advantage__title">Помощь с подбором <br>и <strong>одобрением <br>ипотеки</strong></h2>
-                <img src="img/advantages-2-min.webp" alt="">
-              </div>
-              <div class="advantage advantage--3">
-                <h2 class="advantage__title">15 лет <strong>успешного</strong> строительства</h2>
-                <img src="img/advantages-3-min.webp" alt="">
-              </div>
+            <div class="statistic-item">
+              <img src="./img/lizing/percent-icon.svg" alt="Сделки">
+              <h6>14000</h6>
+              <p>лизинговых сделок за время работы</p>
             </div>
-            <div class="advantage advantage--4">
-              <h2 class="advantage__title"><strong>Оплата:</strong></h2>
-              <ul>
-                <li>Наличный расчет</li>
-                <li>Мат. капитал</li>
-                <li>Ипотечный кредит</li>
-                <li>Безналичный расчет с юр. лицами</li>
-              </ul>
-              <img src="img/advantages-4-min.webp" alt="">
+            <div class="statistic-item">
+              <img src="./img/lizing/calendar-icon.svg" alt="Годы работ">
+              <h6>12 лет</h6>
+              <p>успешной работы с тысячами клиентов</p>
+            </div>
+            <div class="statistic-item">
+              <img src="./img/lizing/people-icon.svg" alt="Сотрудники">
+              <h6>37 сотрудников</h6>
+              <p>и офисы по всему Югу России</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="calc" id="calc">
+      <section class="business-service">
         <div class="container">
-          <div class="calc__wrap">
-            <div class="calc__main">
-              <h2 class="calc__title">Предварительный расчет стоимости</h2>
-              <ol class="calc__list">
-                <li><strong>Ответьте на несколько вопросов</strong>, которые помогут нам рассчитать стоимость</li>
-                <li><strong>Получите ориентировочный расчет стоимости,</strong> и консультацию специалиста</li>
-              </ol>
-              <button onclick="Marquiz.showModal('668272fd2036ac00264d2f29')"
-                class="btn btn-primery calc__btn">РАССЧИТАТЬ СТОИМОСТЬ</button>
-            </div>
-            <div class="calc-manager mob-hide">
-              <div class="calc-manager__header">
-                <img src="img/manager-ava-min.png" alt="">
-                <div>
-                  <div class="calc-manager__name">Вадим Олегович</div>
-                  <div class="calc-manager__state">Прораб компании “ЕСС”</div>
+          <div class="business-service-header">
+            <h2><span>Услуги для бизнеса</span></h2>
+            <div class="head-br"></div>
+            <p>ЛИЗИНГ ДЛЯ БИЗНЕС</p>
+          </div>
+          <div class="business-service-options">
+            <!-- item -->
+            <div class="business-service-option">
+              <div class="business-service-option-top">
+                <div class="business-service-option-img">
+                  <img src="./img/lizing/car-icon.svg" alt="Лизинг автотранспорта">
                 </div>
+                <h5>Лизинг автотранспорта</h5>
               </div>
-              <div class="calc-manager__main">Здравствуйте, меня зовут Вадим Олегович. По результатам Ваших ответов
-                сориентирую вас по стоимости и отвечу на все вопросы.</div>
+              <p>Услуги лизинга автомобилей для юридических лиц и индивидуальных предпринимателей</p>
+            </div>
+            <!-- item -->
+            <div class="business-service-option">
+              <div class="business-service-option-top">
+                <div class="business-service-option-img">
+                  <img src="./img/lizing/work-car-icon.svg" alt="Лизинг оборудования">
+                </div>
+                <h5>Лизинг оборудования</h5>
+              </div>
+              <p>Услуги лизинга автомобилей для юридических лиц и индивидуальных предпринимателей</p>
+            </div>
+            <!-- item -->
+            <div class="business-service-option">
+              <p>Услуги лизинга автомобилей для юридических лиц и индивидуальных предпринимателей</p>
+              <div class="business-service-option-top">
+                <div class="business-service-option-img">
+                  <img src="./img/lizing/skyscrepper-icon.svg" alt="Лизинг недвижимости">
+                </div>
+                <h5>Лизинг недвижимости</h5>
+              </div>
+            </div>
+            <!-- item -->
+            <div class="business-service-option">
+              <p>Услуги лизинга автомобилей для юридических лиц и индивидуальных предпринимателей</p>
+              <div class="business-service-option-top">
+                <div class="business-service-option-img">
+                  <img src="./img/lizing/cran-car-icon.svg" alt="Лизинг спецтехники">
+                </div>
+                <h5>Лизинг спецтехники</h5>
+              </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="types" id="projects">
-        <div class="container">
-          <header class="sec-header">
-            <h2 class="sec-title"><span>Мы строим</span></h2>
-            <div class="sec-br"></div>
-            <p class="sec-sub">ВИДЫ СТРОИТЕЛЬСТВА</p>
-          </header>
-          <ul class="types-list">
-            <li>По типовым и <br>индивидуальным проектам</li>
-            <li>Дома, сданные в срок, <br>прописанным в договоре</li>
-            <li>Используя современные <br>технологии и материалы</li>
-            <li>Учитывая<br> особенности региона</li>
-          </ul>
-          <div class="types-wrap">
-            <div class="type-item type-item--1 js-type-item">
-              <div class="type-item__wrap">
-                <div class="type-item__main">
-                  <h3 class="type-item__title">Капитальные дома</h3>
-                  <ul>
-                    <li>По индивидуальному проекту</li>
-                    <li>Материалы: кирпич, газобетон, шлакоблок</li>
-                  </ul>
-                  <div class="type-item__mark">Сроки реализации: <span>6 мес</span></div>
-                  <div class="type-item__bar">
-                    <a href="#calc" class="type-item__btn js-scroll mob-hide">
-                      <span>Калькулятор стоимости</span>
-                      <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17157 0.464467C6.97631 0.269204 6.65973 0.269204 6.46447 0.464467C6.2692 0.659729 6.2692 0.976311 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.7308 6.97631 7.7308 7.17157 7.53553L10.3536 4.35355ZM1 4.5L10 4.5L10 3.5L1 3.5L1 4.5Z" />
-                      </svg>
-                    </a>
-                    <button class="btn type-item__btn js-type-item-more desc-hide">
-                      <span>подробнее</span>
-                      <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M4.5 0.5C4.5 0.223858 4.27614 0 4 0C3.72386 0 3.5 0.223858 3.5 0.5L4.5 0.5ZM3.64645 9.85355C3.84171 10.0488 4.15829 10.0488 4.35355 9.85355L7.53553 6.67157C7.7308 6.47631 7.7308 6.15973 7.53553 5.96447C7.34027 5.7692 7.02369 5.7692 6.82843 5.96447L4 8.79289L1.17157 5.96447C0.976311 5.7692 0.659728 5.7692 0.464466 5.96447C0.269204 6.15973 0.269204 6.47631 0.464466 6.67157L3.64645 9.85355ZM3.5 0.5L3.5 9.5H4.5L4.5 0.5L3.5 0.5Z" />
-                      </svg>
-                    </button>
-                    <button class="btn type-item__btn js-type-item-open">
-                      <span>Смотреть дома</span>
-                      <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17157 0.464467C6.97631 0.269204 6.65973 0.269204 6.46447 0.464467C6.2692 0.659729 6.2692 0.976311 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.7308 6.97631 7.7308 7.17157 7.53553L10.3536 4.35355ZM1 4.5L10 4.5L10 3.5L1 3.5L1 4.5Z" />
-                      </svg>
-                    </button>
-                  </div>
-                  <a href="#calc" class="header-calc desc-hide type-item__calc js-scroll">
-                    <img src="img/calc-icn.svg" alt="">
-                    <span>Калькулятор стоимости</span>
-                  </a>
-                </div>
-                <div class="type-item__hide js-type-item-hide">
-                  <div class="swiper type-item-slider js-type-item-slider">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <a href="img/dom-1.jpg" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-1.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="img/dom-2.jpg" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-2.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="img/dom-3.jpg" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-3.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="img/dom-4.jpg" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-4.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="img/dom-5.jpg" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-5.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="img/dom-6.jpg" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-6.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="img/dom-7.jpg" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-7.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="img/dom-8.webp" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-8.webp" alt="">
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="img/dom-9.avif" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-9.avif" alt="">
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="img/dom-10.jpg" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-10.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="img/dom-11.jpg" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-11.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="img/dom-12.jpg" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-12.jpg" alt="">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="type-item-slider__pagination js-type-item-slider-pagination"></div>
-                    <button class="btn type-item-slider__prev js-type-item-slider-prev">
-                      <img src="img/prev.svg" alt="">
-                    </button>
-                    <button class="btn type-item-slider__next js-type-item-slider-next">
-                      <img src="img/next.svg" alt="">
-                    </button>
-                  </div>
-                </div>
-              </div>
+          <div class="business-service-calc">
+            <div class="business-service-calc-header">
+              <h6>Иванов Иван</h6>
+              <p>Старший менеджер компании “ЕСС”</p>
             </div>
-            <div class="type-item type-item--2 js-type-item">
-              <div class="type-item__wrap">
-                <div class="type-item__main">
-                  <h3 class="type-item__title">Бысровозводимые дома </h3>
-                  <ul>
-                    <li>Это быстровозводимое здание, которое собирается из готовых модулей, изготавливаемых на заводе
-                    </li>
-                    <li>По типовому проекту</li>
-                    <li>Материалы: древесина, металлопрокат, сендвич - панели</li>
-                  </ul>
-                  <div class="type-item__mark">Сроки реализации: <span>2 мес</span></div>
-                  <div class="type-item__bar">
-                    <a href="#calc" class="type-item__btn js-scroll mob-hide">
-                      <span>Калькулятор стоимости</span>
-                      <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17157 0.464467C6.97631 0.269204 6.65973 0.269204 6.46447 0.464467C6.2692 0.659729 6.2692 0.976311 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.7308 6.97631 7.7308 7.17157 7.53553L10.3536 4.35355ZM1 4.5L10 4.5L10 3.5L1 3.5L1 4.5Z" />
-                      </svg>
-                    </a>
-                    <button class="btn type-item__btn js-type-item-more desc-hide">
-                      <span>подробнее</span>
-                      <svg width="8" height="10" viewBox="0 0 8 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M4.5 0.5C4.5 0.223858 4.27614 0 4 0C3.72386 0 3.5 0.223858 3.5 0.5L4.5 0.5ZM3.64645 9.85355C3.84171 10.0488 4.15829 10.0488 4.35355 9.85355L7.53553 6.67157C7.7308 6.47631 7.7308 6.15973 7.53553 5.96447C7.34027 5.7692 7.02369 5.7692 6.82843 5.96447L4 8.79289L1.17157 5.96447C0.976311 5.7692 0.659728 5.7692 0.464466 5.96447C0.269204 6.15973 0.269204 6.47631 0.464466 6.67157L3.64645 9.85355ZM3.5 0.5L3.5 9.5H4.5L4.5 0.5L3.5 0.5Z" />
-                      </svg>
-                    </button>
-                    <button class="btn type-item__btn js-type-item-open">
-                      <span>Смотреть дома</span>
-                      <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17157 0.464467C6.97631 0.269204 6.65973 0.269204 6.46447 0.464467C6.2692 0.659729 6.2692 0.976311 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.7308 6.97631 7.7308 7.17157 7.53553L10.3536 4.35355ZM1 4.5L10 4.5L10 3.5L1 3.5L1 4.5Z" />
-                      </svg>
-                    </button>
+            <div class="business-service-calc-content">
+              <div class="business-service-calc-title">
+                <h3>Расчитайте условия по лизингу и сэкономьте <span>до 15%</span></h3>
+                <p>Оставьте заявку и наш менеджер подготовить дял вас лизинг на самых выгодных условиях</p>
+              </div>
+              <div class="business-service-calc-form">
+                <form action="php/mail.php" method="post" class="form tour-form js-form-val">
+                  <div>
+                    <input type="name" name="text" class="input" placeholder="Ваше имя">
+                    <input type="tel" name="tel" class="input js-val mask-phone" placeholder="Телефон">
+                    <input type="mail" name="mail" class="input" placeholder="E-mail">
+                    <input type="lizing" name="text" class="input" placeholder="Тип лизинга">
                   </div>
-                  <a href="#calc" class="header-calc desc-hide type-item__calc js-scroll">
-                    <img src="img/calc-icn.svg" alt="">
-                    <span>Калькулятор стоимости</span>
-                  </a>
-                </div>
-                <div class="type-item__hide js-type-item-hide">
-                  <div class="swiper type-item-slider js-type-item-slider">
-                    <div class="swiper-wrapper">
-                      <div class="swiper-slide">
-                        <a href="img/dom-item1.jpeg" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-item1.jpeg" alt="">
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="img/dom-item2.jpg" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-item2.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="img/dom-item3.jpg" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-item3.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="img/dom-item4.jpg" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-item4.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="img/dom-item5.jpg" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-item5.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="img/dom-item6.jpg" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-item6.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="img/dom-item7.jpg" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-item7.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="img/dom-item8.jpg" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-item8.jpg" alt="">
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="img/dom-item9.jpeg" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-item9.jpeg" alt="">
-                        </a>
-                      </div>
-                      <div class="swiper-slide">
-                        <a href="img/dom-item10.jpg" class="type-item-slide" data-fancybox="type-1">
-                          <img src="img/dom-item10.jpg" alt="">
-                        </a>
-                      </div>
-                    </div>
-                    <div class="type-item-slider__pagination js-type-item-slider-pagination"></div>
-                    <button class="btn type-item-slider__prev js-type-item-slider-prev">
-                      <img src="img/prev.svg" alt="">
-                    </button>
-                    <button class="btn type-item-slider__next js-type-item-slider-next">
-                      <img src="img/next.svg" alt="">
-                    </button>
-                  </div>
-                </div>
+                  <button class="btn btn-primery form-btn" type="submit">перезвонить вам</button>
+                </form>
               </div>
             </div>
           </div>
@@ -490,8 +215,7 @@
       <section class="services" id="services">
         <div class="container">
           <header class="sec-header">
-            <h2 class="sec-title">Выполняем услуги <span>комплексно</span> <br>под ключ, и <span>по отдельности</span>
-            </h2>
+            <h2 class="sec-title"><span>Какие услуги</span> мы предлагаем для Вас?</h2>
             <div class="sec-br"></div>
             <p class="sec-sub">УСЛУГИ</p>
           </header>
@@ -2800,74 +2524,6 @@
         </div>
       </section>
 
-      <section class="personal">
-        <div class="container">
-          <div class="personal__wrap">
-            <div class="personal__main">
-              <h2 class="sec-title">Разработаем <span>индивидуальный проект</span></h2>
-              <p class="sec-txt personal__txt">Наша команда архитекторов - проектировщиков <b>воплотят ваше видение</b>
-                о доме, участке и их обустройству</p>
-              <button class="btn btn-primery personal__btn js-consultation-btn">консультация о проектировании</button>
-            </div>
-            <div class="swiper personal-slider" id="js-personal-slider">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <a href="img/dom-item6.jpg" class="personal-slide" data-fancybox="personal">
-                    <img src="img/dom-item6.jpg" alt="">
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="img/personal-min.jpg" class="personal-slide" data-fancybox="personal">
-                    <img src="img/personal-min.jpg" alt="">
-                  </a>
-                </div>
-                <div class="swiper-slide">
-                  <a href="img/dom-5.jpg" class="personal-slide" data-fancybox="personal">
-                    <img src="img/dom-5.jpg" alt="">
-                  </a>
-                </div>
-              </div>
-              <div class="pagination personal-slider__pagination" id="js-personal-slider-pagination"></div>
-              <button class="btn prev personal-slider__prev" id="js-personal-slider-prev">
-                <img src="img/prev.svg" alt="">
-              </button>
-              <button class="btn next personal-slider__next" id="js-personal-slider-next">
-                <img src="img/next.svg" alt="">
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="adv-list">
-        <div class="container">
-          <div class="adv-list__wrap">
-            <div class="adv-list-item">
-              <div class="adv-list-item__main">
-                <h2 class="adv-list-item__title">Визуализация в 3D</h2>
-                <p class="adv-list-item__txt">Поможем увидеть ваш будущий дом с участком в красочном 3D изображении.</p>
-              </div>
-              <img src="img/adv-list-1-min.webp" alt="" class="adv-list-item__img">
-            </div>
-            <div class="adv-list-item">
-              <div class="adv-list-item__main">
-                <h2 class="adv-list-item__title">Планировка под ваш быт</h2>
-                <p class="adv-list-item__txt">Вместе с вами разработаем планировку, отражающий ваш образ жизни.</p>
-              </div>
-              <img src="img/adv-list-2-min.webp" alt="" class="adv-list-item__img">
-            </div>
-            <div class="adv-list-item">
-              <div class="adv-list-item__main">
-                <h2 class="adv-list-item__title">Вносим правки в проект</h2>
-                <p class="adv-list-item__txt">Вносим корректировки в проект, что бы он стал именно таким, как вы хотите.
-                </p>
-              </div>
-              <img src="img/adv-list-3-min.webp" alt="" class="adv-list-item__img">
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section class="attach-sec">
         <div class="container">
           <div class="attach-sec__wrap">
@@ -2910,446 +2566,11 @@
         </div>
       </section>
 
-      <section class="our-advantages" id="advantages">
-        <div class="container">
-          <header class="sec-header">
-            <h2 class="sec-title">Почему <span>нам доверяют</span></h2>
-            <div class="sec-br"></div>
-            <p class="sec-sub">преимущества</p>
-          </header>
-          <div class="our-advantages__wrap">
-            <div class="our-advantages-item our-advantages-item--check">
-              <div class="our-advantages-item__main-header">
-                <img class="our-advantages-item__logo" src="img/logo-green.svg" alt="ЕСС">
-                <div class="our-advantages-item__main-title">Гарант частного<br>строительства</div>
-              </div>
-              <ul class="our-advantages-item__list our-advantages-item__main-list">
-                <li>Работаем только по договору, где прописываем сумму и сроки выполнения. Даем 100% гарантию
-                  результата.</li>
-                <li>Есть портфолио выполненных объектов, по которым можем провести экскурсию</li>
-                <li>Контролируем все этапы работ до сдачи объекта в срок, указанным в договоре. Все процессы отлажены и
-                  работают как часы.</li>
-                <li>Сумма прописанная в договоре неизменна без изменения объемов работ</li>
-                <li>Есть свой офис с образцами материалов, где специалисты ЕСС групп помогут Вам сделать выбор</li>
-              </ul>
-            </div>
-            <div class="our-advantages-item our-advantages-item--del">
-              <div class="our-advantages-item__del-header">
-                <div class="our-advantages-item__del-title">Частные мастера<br>(частники) </div>
-              </div>
-              <ul class="our-advantages-item__list our-advantages-item__del-list">
-                <li>Нет понимания итоговой стоимости и сроков</li>
-                <li>Качество только на словах</li>
-                <li>Лишние финансовые потери </li>
-                <li>Смещение сроков без объяснения причин и уведомления заказчика</li>
-                <li>Недобросовестные работники, если не исчезнут после получения аванса. Исчезнут при наступлении
-                  гарантийного случая</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="reviews" id="reviews">
-        <div class="container">
-          <div class="reviews__header">
-            <div class="reviews__calc">
-              <img src="img/160+.svg" alt="">
-            </div>
-            <header class="sec-header">
-              <h2 class="sec-title"><span>Видео - обзоры и <br>отзывы </span>о наших проектах</h2>
-              <div class="sec-br"></div>
-              <p class="sec-sub">отзывы</p>
-            </header>
-          </div>
-          <div class="reviews-video">
-            <div class="reviews-video__main">
-              <div class="reviews-video__row">
-                <a class="reviews-video-item" href="https://www.youtube.com/watch?v=0rTdu4p6_5g"
-                  data-fancybox="video-reviews">
-                  <!-- <a class="reviews-video-item" href="https://www.youtube.com/@ess-stroy"> -->
-                  <img src="https://img.youtube.com/vi/0rTdu4p6_5g/mqdefault.jpg" alt="">
-                </a>
-                <a class="reviews-video-item" href="https://www.youtube.com/watch?v=nqbTi_tvpxg"
-                  data-fancybox="video-reviews">
-                  <!-- <a class="reviews-video-item" href="https://www.youtube.com/@ess-stroy"> -->
-                  <img src="https://img.youtube.com/vi/nqbTi_tvpxg/mqdefault.jpg" alt="">
-                </a>
-              </div>
-              <div class="reviews-video__footer">
-                <a href="https://www.youtube.com/@ess-stroy" target="_blank">
-                  <span>Смотрите больше на <span>YouTube</span></span>
-                  <img src="img/youtube.png" alt="">
-                </a>
-              </div>
-            </div>
-            <div class="reviews-video__fig">
-              <img src="img/reviews-laptop-min.webp" alt="">
-            </div>
-          </div>
-          <div class="reviews-main">
-            <div class="reviews-main__header">
-              <div class="reviews-main__title">Читайте отзывы о нас на <a
-                  href="https://www.avito.ru/brands/i36169923?src=search_seller_info" target="_blank">Авито</a></div>
-              <div class="reviews-main__flag">
-                <img src="img/flag.svg" alt="">
-              </div>
-              <div class="reviews-main__stars">
-                <img src="img/stars.svg" alt="">
-              </div>
-              <div class="reviews-main__fig">
-                <img src="img/reviews-phone-min.webp" alt="">
-              </div>
-              <!-- <a href="#" class="reviews-main__more">
-                    <span>Все отзывы</span>
-                    <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17157 0.464467C6.97631 0.269204 6.65973 0.269204 6.46447 0.464467C6.2692 0.659729 6.2692 0.976311 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.7308 6.97631 7.7308 7.17157 7.53553L10.3536 4.35355ZM1 4.5L10 4.5L10 3.5L1 3.5L1 4.5Z" fill="#18181A"/>
-                    </svg>
-                  </a> -->
-            </div>
-            <div class="reviews-main-list">
-              <a href="img/review-1-min.webp" class="reviews-main-item" data-fancybox="reviews">
-                <img src="img/review-1-min.webp" alt="">
-              </a>
-              <a href="img/review-2-min.webp" class="reviews-main-item" data-fancybox="reviews">
-                <img src="img/review-2-min.webp" alt="">
-              </a>
-              <a href="img/review-3-min.webp" class="reviews-main-item" data-fancybox="reviews">
-                <img src="img/review-3-min.webp" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="tour">
-        <div class="container">
-          <div class="tour__wrap">
-            <div class="tour__main">
-              <h2 class="sec-title"><span>Запишитесь на бесплатную экскурсию</span>по строящимся объектам</h2>
-              <p class="tour__txt">Вы сможете задать волнующие вопросы о ходе строительства и убедиться в реальности
-                наших слов.</p>
-              <div class="tour__sup">Наблюдайте за работой наших бригад, оцените качество исполнения.</div>
-            </div>
-            <div class="tour__form">
-              <div class="tour__form-txt">Оставьте заявку прямо сейчас, мы свяжемся с вами для уточнения даты и времени
-                просмотра.</div>
-              <form action="php/mail.php" method="post" class="form tour-form js-form-val">
-                <input type="text" name="subj" hidden=""
-                  placeholder="Запишитесь на бесплатную экскурсию по строящимся объектам">
-                <input type="name" name="text" class="input" placeholder="Ваше имя">
-                <input type="tel" name="tel" class="input js-val mask-phone" placeholder="Ваше номер телефона">
-                <button class="btn btn-primery form-btn" type="submit">записаться</button>
-                <div class="form-sub order-sec__sub">
-                  Заполняя форму, вы&nbsp;соглашаетесь<br> на&nbsp;обработку&nbsp;<a href="pdf/politic.pdf"
-                    target="_blank">персональных данных</a>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="bonus" id="actions">
-        <div class="container">
-          <header class="sec-header">
-            <h2 class="sec-title"><span>Бонусы</span> каждому заказчику</h2>
-            <div class="sec-br"></div>
-            <p class="sec-sub">акции</p>
-          </header>
-          <div class="swiper bonus-slider" id="js-bonus-slider">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="bonus-slide">
-                  <div class="bonus-slide__main">
-                    <h3 class="bonus-slide__title">При заказе забора с кирпичными колоннами под ключ с воротами и
-                      калиткой:</h3>
-                    <p class="bonus-slide__txt"> от 25 п.м. - датчики на автоматику в подарок </p>
-                    <p class="bonus-slide__txt">От 30 п.м. - автоматика в подарок </p>
-                    <p class="bonus-slide__txt">Бесплатный выезд на замер для всех позиций.</p>
-                    <button class="btn bonus-slide__link js-consultation-btn">Принять участие в акции</button>
-                  </div>
-                  <div class="bonus-slide__pic">
-                    <img src="img/bonus-min.webp" alt="">
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="bonus-slide">
-                  <div class="bonus-slide__main">
-                    <h3 class="bonus-slide__title">Акции на навесы:</h3>
-                    <p class="bonus-slide__txt">При заказе навеса от 100 квадратных метров – водосточная система в
-                      подарок</p>
-                    <button class="btn bonus-slide__link js-consultation-btn">Принять участие в акции</button>
-                  </div>
-                  <div class="bonus-slide__pic">
-                    <img src="img/naves.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="bonus-slide">
-                  <div class="bonus-slide__main">
-                    <h3 class="bonus-slide__title">Акции на строительство домов:
-                    </h3>
-                    <p class="bonus-slide__txt">При строительстве дома от 100 квадратных метров – проект в подарок или
-                      геодезия в подарок.</p>
-                    <p class="bonus-slide__txt">Подбор участка в подарок при строительстве домов</p>
-                    <button class="btn bonus-slide__link js-consultation-btn">Принять участие в акции</button>
-                  </div>
-                  <div class="bonus-slide__pic">
-                    <img src="img/doma.jpg" alt="">
-                  </div>
-                </div>
-              </div>
-              <!-- <div class="swiper-slide">
-                    <div class="bonus-slide">
-                      <div class="bonus-slide__main">
-                        <h3 class="bonus-slide__title">Акции на заборы с автоматикой:
-                        </h3>
-                        <p class="bonus-slide__txt">При заказе дорогого забора с автоматикой – автоматика в подарок.</p>
-                        <p class="bonus-slide__txt">При заказе 20 метров забора с кирпичными колоннами и жалюзями – датчики на автоматику в подарок</p>
-                        <p class="bonus-slide__txt">При заказе от 30 метров забора с колоннами – автоматика целиком в подарок</p>
-                        <button class="btn bonus-slide__link js-consultation-btn">Принять участие в акции</button>
-                      </div>
-                      <div class="bonus-slide__pic">
-                        <img src="img/vorota.jpg" alt="">
-                      </div>                
-                    </div>
-                  </div> -->
-            </div>
-            <div class="pagination bonus-slider__pagination" id="js-bonus-slider-pagination"></div>
-            <button class="btn prev bonus-slider__prev" id="js-bonus-slider-prev">
-              <img src="img/prev.svg" alt="">
-            </button>
-            <button class="btn next bonus-slider__next" id="js-bonus-slider-next">
-              <img src="img/next.svg" alt="">
-            </button>
-          </div>
-        </div>
-      </section>
-
-      <section class="programm">
-        <div class="container">
-          <div class="programm__wrap">
-            <header class="sec-header">
-              <h2 class="sec-title">Подберем <span>выгодные ипотечные программы</span></h2>
-              <div class="sec-br"></div>
-              <p class="sec-sub">ипотека</p>
-            </header>
-            <ul class="programm-list">
-              <li>Наши ипотечные брокеры подберут для вас предложения банков и помогут с подачей документов.</li>
-              <li>Компания “ЕСС” имеет официальную аккредитацию в банках.</li>
-            </ul>
-            <div class="programm-brands">
-              <div class="programm-brands__wrap">
-                <div class="programm-brand"><img src="img/pochta-min.webp" alt=""></div>
-                <div class="programm-brand"><img src="img/sber-min.webp" alt=""></div>
-                <div class="programm-brand"><img src="img/alfa-min.webp" alt=""></div>
-                <div class="programm-brand"><img src="img/rshb-min.webp" alt=""></div>
-                <div class="programm-brand"><img src="img/vtb-min.webp" alt=""></div>
-                <div class="programm-brand"><img src="img/tinkoff-min.webp" alt=""></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="support">
-        <div class="container">
-          <div class="support__wrap">
-            <div class="support__main">
-              <h2 class="sec-title"><span>Оставьте заявку</span> прямо сейчас</h2>
-              <p class="support__txt">мы свяжемся с вами в течение 5 минут</p>
-              <form action="php/mail.php" method="post" class="form support-form js-form-val">
-                <input type="text" name="subj" hidden="" placeholder="Подобрать ипотечную программу">
-                <input type="name" name="text" class="input" placeholder="Ваше имя">
-                <input type="tel" name="tel" class="input js-val mask-phone" placeholder="Ваше номер телефона">
-                <button class="btn btn-primery form-btn" type="submit">подобрать ипотечную программу</button>
-                <div class="form-sub support__sub">
-                  Заполняя форму, вы&nbsp;соглашаетесь<br> на&nbsp;обработку&nbsp;<a href="pdf/politic.pdf"
-                    target="_blank">персональных данных</a>
-                </div>
-              </form>
-            </div>
-            <div class="support__fig">
-              <img src="img/support-phone-min.png" alt="">
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="plus">
-        <div class="container">
-          <div class="plus__wrap">
-            <header class="sec-header">
-              <h2 class="sec-title">Работая с нами <span>вы получаете</span></h2>
-              <div class="sec-br"></div>
-              <p class="sec-sub">плюсы есс</p>
-            </header>
-            <div class="plus__logotyps mob-hide">
-              <img src="img/logotyps-min.webp" alt="">
-            </div>
-            <div class="plus__shem">
-              <div class="plus-item">
-                <div class="plus-item__header">
-                  <div class="plus-item__icn">
-                    <img src="img/add.svg" alt="">
-                  </div>
-                  <div class="plus-item__title">Фото и видео с площадки</div>
-                </div>
-                <div class="plus-item__hide">
-                  Фото и видео с площадки строительства частного дома показывают каждый этап процесса: от закладки
-                  фундамента до финальных штрихов. Эти материалы позволяют следить за качеством работ и прогрессом
-                  проекта.</div>
-              </div>
-              <div class="plus-item plus-item--revers">
-                <div class="plus-item__header">
-                  <div class="plus-item__icn">
-                    <img src="img/add.svg" alt="">
-                  </div>
-                  <div class="plus-item__title">Качество с первого раза</div>
-                </div>
-                <div class="plus-item__hide">За нами не нужно переделывать! Мы стремимся к идеальному исполнению,
-                  соблюдая контроль качества и закупаем качественные материалы только у проверенных поставщиков.</div>
-              </div>
-              <div class="plus-item">
-                <div class="plus-item__header">
-                  <div class="plus-item__icn">
-                    <img src="img/add.svg" alt="">
-                  </div>
-                  <div class="plus-item__title">Скоординированные <br>процессы</div>
-                </div>
-                <div class="plus-item__hide">Весь процесс – в одних руках, организован и работает без разрывов и
-                  нахлестов этапов работ.</div>
-              </div>
-              <div class="plus-item plus-item--revers">
-                <div class="plus-item__header">
-                  <div class="plus-item__icn">
-                    <img src="img/add.svg" alt="">
-                  </div>
-                  <div class="plus-item__title">Быстрые сроки</div>
-                </div>
-                <div class="plus-item__hide">За счет бесперебойной работе на стройплощадке. Мы берем на себя доставку и
-                  снабжение рабочих инструментами и материалами. Ваша стройплощадка всегда обеспечена всем, что нужно
-                  для бесперебойной работы.</div>
-              </div>
-              <div class="plus-item">
-                <div class="plus-item__header">
-                  <div class="plus-item__icn">
-                    <img src="img/add.svg" alt="">
-                  </div>
-                  <div class="plus-item__title">Уменьшенную стоимость</div>
-                </div>
-                <div class="plus-item__hide">Мы экономим Ваш бюджет за счет: дилерских бонусов, оптимизации логистики и
-                  технологических процессов, а не за счет дешевых аналогов материалов.</div>
-              </div>
-              <div class="plus-item plus-item--revers">
-                <div class="plus-item__header">
-                  <div class="plus-item__icn">
-                    <img src="img/add.svg" alt="">
-                  </div>
-                  <div class="plus-item__title">Гарантии производителя</div>
-                </div>
-                <div class="plus-item__hide">Мы закупаем материал напрямую у производителя индивидуально для каждого
-                  объекта под ваши размеры, исключая этап резки материала, сохраняя тем самым заводское качество и
-                  гарантии производителя</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="build-order">
-        <div class="container">
-          <div class="build-order__wrap">
-            <div class="build-order__main">
-              <h2 class="sec-title">Оставьте заявку на <span>консультацию по строительству</span></h2>
-              <div class="build-order__fig">
-                <img src="img/IMG-4.png" alt="">
-                <div class="build-order__sup">
-                  <b>Элина Валерьевна</b>
-                  Старший менеджер компании “ЕСС”
-                </div>
-              </div>
-              <form action="php/mail.php" method="post" class="form build-order-form js-form-val">
-                <input type="text" name="subj" hidden="" placeholder="Оставьте заявку на консультацию по строительству">
-                <input type="name" name="text" class="input" placeholder="Ваше имя">
-                <input type="tel" name="tel" class="input js-val mask-phone" placeholder="Ваше номер телефона">
-                <button class="btn btn-primery form-btn" type="submit">перезвонить вам </button>
-                <div class="form-sub order-sec__sub">
-                  Заполняя форму, вы&nbsp;соглашаетесь<br> на&nbsp;обработку&nbsp;<a href="pdf/politic.pdf"
-                    target="_blank">персональных данных</a>
-                </div>
-              </form>
-              <a href="#" target="_blank" class="build-order-tg">
-                <span>задать вопрос в телеграмме</span>
-                <img src="img/tg.svg" alt="">
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="about" id="about">
-        <div class="container">
-          <div class="about__wrap">
-            <header class="sec-header">
-              <h2 class="sec-title">Строй групп “ЕСС” - <span>Ваш надежный подрядчик</span></h2>
-              <div class="sec-br"></div>
-              <p class="sec-sub">О НАС</p>
-            </header>
-            <div class="about__main">
-              <ul class="about-list">
-                <li>На протяжении последних 15 лет группа строительных компаний "ЕСС" утверждает свою репутацию в
-                  качестве надежного подрядчика в строительстве частных домов. </li>
-                <li>Наш опыт подкреплен командой высококвалифицированных специалистов, за работу которых мы лично
-                  ручаемся. </li>
-                <li>Специалисты отдельных направлений собраны в одном месте для максимально оптимизации рабочих
-                  процессов, в результате чего исключаются временные и финансовые издержки. </li>
-              </ul>
-              <!--
-                  <a href="#" class="about-link">
-                    <span>О нас</span>
-                    <svg width="11" height="8" viewBox="0 0 11 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M1 3.5C0.723858 3.5 0.5 3.72386 0.5 4C0.5 4.27614 0.723858 4.5 1 4.5L1 3.5ZM10.3536 4.35355C10.5488 4.15829 10.5488 3.84171 10.3536 3.64645L7.17157 0.464467C6.97631 0.269204 6.65973 0.269204 6.46447 0.464467C6.2692 0.659729 6.2692 0.976311 6.46447 1.17157L9.29289 4L6.46447 6.82843C6.2692 7.02369 6.2692 7.34027 6.46447 7.53553C6.65973 7.7308 6.97631 7.7308 7.17157 7.53553L10.3536 4.35355ZM1 4.5L10 4.5L10 3.5L1 3.5L1 4.5Z" fill="#18181A"/>
-                    </svg>
-                  </a>
-      -->
-            </div>
-            <div class="about-fig">
-              <div class="about-fig__bg">
-                <img src="img/about-bg-min.webp" alt="">
-              </div>
-              <div class="about-fig__fig">
-                <img src="img/IMG-3.png" alt="">
-              </div>
-              <div class="about-fig__sup">
-                <b>Роман Зазович</b>
-                Руководитель “ЕСС”
-              </div>
-            </div>
-            <div class="about-stat">
-              <div class="about-stat-item">
-                <span>15</span>лет строим и проектируем дома
-              </div>
-              <div class="about-stat-item">
-                <span>160+</span>авторских проектов
-              </div>
-              <div class="about-stat-item">
-                <span>10</span>лет гарантии на конструкцию
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section class="team" id="team">
         <div class="container">
           <div class="team__wrap">
             <header class="sec-header">
-              <h2 class="sec-title">Наша опытная <span>команда <br>профессионалов</span></h2>
+              <h2 class="sec-title">Наша опытная <span>команда профессионалов</span></h2>
               <div class="sec-br"></div>
               <p class="sec-sub">КОМАНДА</p>
             </header>
@@ -3394,71 +2615,6 @@
         </div>
       </section>
 
-      <!--<section class="doc">
-        <div class="container">
-            <div class="doc__wrap">
-              <div class="doc__main">
-                <h2 class="sec-title"><span>Разрешения и&nbsp;лицензии</span></h2>
-                <p class="doc__txt"><span>ГК “ЕСС” обладает всеми необходимыми разрешениями и лицензиями</span> на строительные работы и ввод  в эксплуатацию объектов</p>
-              </div>
-              <div class="swiper doc-slider" id="js-doc-slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a href="img/doc-min.jpg" class="doc-slide" data-fancybox="doc">
-                      <img src="img/doc-min.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="img/doc-min.jpg" class="doc-slide" data-fancybox="doc">
-                      <img src="img/doc-min.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="img/doc-min.jpg" class="doc-slide" data-fancybox="doc">
-                      <img src="img/doc-min.jpg" alt="">
-                    </a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="img/doc-min.jpg" class="doc-slide" data-fancybox="doc">
-                      <img src="img/doc-min.jpg" alt="">
-                    </a>
-                  </div>
-                </div>
-                <div class="doc-slider__pagination" id="js-doc-slider-pagination"></div>
-                <button class="btn doc-slider__prev" id="js-doc-slider-prev">
-                  <img src="img/prev.svg" alt="">
-                </button>
-                <button class="btn doc-slider__next" id="js-doc-slider-next">
-                  <img src="img/next.svg" alt="">
-                </button>    
-              </div>
-            </div>
-          </div>
-        </section> -->
-        
-      <section class="steps">
-        <div class="container">
-          <h2 class="sec-title"><span>Этапы</span> работы с нами</h2>
-          <ol class="steps-list">
-            <li class="steps-item">
-              <b>Вы оставляете заявку</b> через <button class="btn js-order-btn">форму</button> или по телефону
-              <a href="tel:89385457888">8 (938) 545-78-88</a>
-            </li>
-            <li class="steps-item">Мы проконсультируем вас, опросим и уточним ваши потребности для предварительного
-              расчета проекта</li>
-            <li class="steps-item">Наша команда выезжает на участок в удобное для вас время для замера и осмотра
-              территории. <br><br>На месте Вы можете показать наглядно свои пожелания по будущему дому.</li>
-            <li class="steps-item">При необходимости проводим геологические изыскания. <br><br>Проектируем объект,
-              рассчитываем конечную стоимость, составляем и согласовываем план работ</li>
-            <li class="steps-item">Подписываем договор, четко прописывая все условия: сроки, стоимость, гарантии.
-              Внесение предоплаты и закупка материала</li>
-            <li class="steps-item">Начинаем работы. <br><br>Подготавливаем объект к началу строительства</li>
-            <li class="steps-item">Рабочий процесс: <br>Строительство, отчеты, обсуждения, даем рекомендации.</li>
-            <li class="steps-item">Вы проверяете качество работ и оплачиваете оставшуюся часть суммы</li>
-          </ol>
-        </div>
-      </section>
-
       <section class="order-sec">
         <div class="container">
           <div class="order-sec__wrap">
@@ -3499,25 +2655,6 @@
               <li>Посчитаем предварительную стоимость проекта</li>
               <li>Ответим на все вопросы</li>
             </ul>
-          </div>
-        </div>
-      </section>
-
-      <section class="help">
-        <div class="container">
-          <div class="help__wrap">
-            <div class="help__main">
-              <p class="help__sup">Подписывайтесь на наши социальные сети, где мы</p>
-              <h2 class="sec-title"><span>Поможем разобраться</span><br>в нюансах строительства</h2>
-              <ul class="help-soc">
-                <li><a href="https://vk.com/ess.stroy" target="_blank" title="Вконтакте"><img src="img/vk.svg"
-                      alt="Вконтакте"></a></li>
-                <li><a href="https://www.youtube.com/@ess-stroy" target="_blank" title="YouTube"><img
-                      src="img/youtube-min.png" alt="YouTube"></a></li>
-                <li><a href="https://t.me/ECC_stroygrupp" target="_blank" title="Telegram"><img src="img/telegram.svg"
-                      alt="Telegram"></a></li>
-              </ul>
-            </div>
           </div>
         </div>
       </section>
