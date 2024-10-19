@@ -1,7 +1,9 @@
 @import "./../base/vars";
 
 .business-service{
-    padding: 200px 0 65px;
+    padding: 0 0 65px;
+    position: relative;
+    top: -70px;
 
     // === header
     .business-service-header{

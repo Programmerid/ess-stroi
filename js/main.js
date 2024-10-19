@@ -314,7 +314,6 @@ $(document).ready(function () {
     $('.js-service-item-btn.open').not(this).each(function () {
       $(this).removeClass('open').closest('.js-service-item').find('.js-service-item-hide ul').slideUp(300);
     });
-
     $(this).toggleClass('open').closest('.js-service-item').find('.js-service-item-hide ul').slideToggle(300);
   });
 
@@ -325,7 +324,8 @@ $(document).ready(function () {
   })
 
   //order call form
-  $('.js-order-btn').on('click', function () {
+  $('.js-order-btn').on('click', function (e) {
+    e.event.preventDefault();
     $('body').addClass('no-scroll');
     $('#js-popup-order').addClass('open');
   })

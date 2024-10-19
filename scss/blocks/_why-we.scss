@@ -1,0 +1,110 @@
+@import "./../base/vars";
+.why-we{
+    padding: 0 0 40px 0;
+
+    // === header
+    .why-we-header{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 24px;
+        margin-bottom: 35px;
+
+        h2{
+            font-weight: 500;
+            font-size: 40px;
+            line-height: 120%;
+            color: #303030;
+            max-width: 300px;
+
+            span{
+                font-weight: 700;
+                color: #18181A;
+            }
+        }
+        .head-br{
+            flex-grow: 1;
+            background-color: #BEC0CA;
+            height: 1px;
+            margin-top: 25px;
+        }
+        p{
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 120%;
+            text-align: right;
+            letter-spacing: 4px;
+            color: #9698A5;
+            margin-top: 16px;
+        }
+    }
+    .why-we-list{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .why-we-list-item{
+            margin: 0 0 50px 0;
+            width: 23%;
+
+            .why-we-list-item-head{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-start;
+                margin: 0 0 20px 0;
+
+                span{
+                    background: url("./../../img/lizing/check-circle-icon.svg") no-repeat center;
+                    background-size: contain;
+                    height: 39px;
+                    width: 39px;
+                    margin: 0 10px 0 0;
+                }
+                p{
+                    color: $black;
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+            }
+            >p{
+                color: $black;
+                font-size: 12px;
+                font-weight: 300;
+                line-height: 1.4;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    .why-we{
+        padding: 0 0 20px 0;
+
+        .why-we-header{
+            flex-direction: column;
+            gap: 0;
+
+            h2{
+                span{}
+            }
+            .head-br{}
+            p{
+                margin-top: 0;
+            }
+        }
+        .why-we-list{
+            .why-we-list-item{
+                margin: 0 0 30px 0;
+                width: 100%;
+    
+                .why-we-list-item-head{
+                    span{}
+                    p{}
+                }
+                >p{}
+            }
+        }
+    }
+}
