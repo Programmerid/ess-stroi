@@ -266,8 +266,36 @@ $(document).ready(function () {
     }
   });
 
+  // ===== Slider Sertificates =====
+  $('.sertificates-slider.owl-carousel').owlCarousel({
+    stagePadding: 10,
+    items: 3,
+    nav: true,
+    margin: 10,
+    dots: true,
+    responsiveClass: true,
+    responsive: {
+      1280: {
+        items: 3
+      },
+      1100: {
+        items: 3
+      },
+      768: {
+        items: 2
+      },
+      480: {
+        items: 1
+      },
+      320: {
+        items: 1
+      }
+    }
+  });
+
   /* ===== PHOTOBOX GALARY ===== */
   $('.gallery-works-slider').photobox('a');
+  $('.sertificates-slider .owl-stage').photobox('a');
 
   // ===== Секция Построенные дома =====
   (function () {
@@ -472,3 +500,31 @@ $(document).ready(function () {
   });
 })();
 
+// Показать - убрать мобильное меню
+(function () {
+  document.addEventListener('DOMContentLoaded', function() {
+    (function() {
+        const mobileMenuButton = document.querySelector('.header-mobile-menu');
+        const mobileHiddenMenu = document.querySelector('.mobile-hidden-menu');
+        const mobileMenuCloseButton = document.querySelector('.mobile-hidden-menu-close');
+
+        function openMenu(event) {
+            event.preventDefault(); 
+            mobileHiddenMenu.style.display = 'block';
+        }
+
+        function closeMenu(event) {
+            event.preventDefault(); 
+            mobileHiddenMenu.style.display = 'none';
+        }
+
+        if (mobileMenuButton) {
+            mobileMenuButton.addEventListener('click', openMenu);
+        }
+
+        if (mobileMenuCloseButton) {
+            mobileMenuCloseButton.addEventListener('click', closeMenu);
+        }
+    })();
+  });
+})();

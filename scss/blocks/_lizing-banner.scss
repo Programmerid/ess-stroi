@@ -100,8 +100,49 @@
                 z-index: 1;
             }
         }
+        .js-consultation-btn{
+            display: none;
+        }
     }
 }
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 768px){
+    .lizing-banner{
+        padding: 200px 0 240px;
 
+        .lizing-banner-header{
+            h1{
+                font-size: 30px;
+                line-height: 1.4;
+            }
+            p{
+                font-size: 14px;
+                font-weight: 100;
+                line-height: 1.4;
+            }
+        }
+        .lizing-banner-form{
+            h5{
+                display: none;
+            }
+            .form{
+                display: none;
+            }
+            .js-consultation-btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                padding: 28px 30px;
+                gap: 10px;
+                background-color: #0CBB65;
+                border-radius: 40px;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 1.5;
+                text-transform: uppercase;
+                color: #fff;
+                transition: background-color .25s linear;
+                margin: 0 auto;
+            }
+        }
+    }
 }

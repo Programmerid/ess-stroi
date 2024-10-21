@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/fancybox.css" />
   <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="js/libraries/photobox/photobox.css">
   <link rel="stylesheet" href="css/main.css" />
   <!-- All new style by Mikhail -->
   <link rel="stylesheet" href="./scss/main/main.min.css">
@@ -44,7 +46,8 @@
     <!-- header -->
     <header class="header-lizing">
       <div class="container">
-        <div class="header-top">
+        <!-- Desctop -->
+        <div class="header-top desctop">
           <div class="header-left">
             <div class="header-logo">
               <a href="/">
@@ -59,10 +62,10 @@
           <div class="header-right">
             <div class="header-links">
               <p>Задайте вопрос online</p>
-              <a href="">
+              <a href="https://wa.me/+79628800911">
                 <img src="./img/lizing/whatsapp-icon.svg" alt="whatsapp">
               </a>
-              <a href="">
+              <a href="https://t.me/ECC_stroygrupp">
                 <img src="./img/lizing/telegram-icon.svg" alt="telegram">
               </a>
             </div>
@@ -71,23 +74,83 @@
                 <p>Ежедневно с 9:00 до 20:00</p>
               </div>
               <div class="header-call-phone">
-                <a href="telto:8 (938) 545-78-88">8 (938) 545-78-88</a>
-                <a href="">Заказать обратный звонок</a>
+                <a href="tel:89385457888">8 (938) 545-78-88</a>
+                <button class="js-consultation-btn">Заказать обратный звонок</button>
               </div>
             </div>
           </div>
         </div>
-        <div class="header-bottom">
+        <!-- Mobile -->
+        <div class="header-top mobile">
+          <div class="header-mobile-logo">
+            <a href="/">
+              <img src="./img/lizing/logo-header.svg" alt="есслизинг">
+            </a>
+          </div>
+          <div class="header-mobile-call">
+            <a href="telto:8 (938) 545-78-88">8 (938) 545-78-88</a>
+          </div>
+          <a href="" class="header-mobile-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
+        </div>
+        <!-- Desctop -->
+        <div class="header-bottom desctop">
           <ul>
-            <li><a href="">Услуги</a></li>
-            <li><a href="">О компании</a></li>
-            <li><a href="">Этапы работы</a></li>
-            <li><a href="">Наша команда</a></li>
-            <li><a href="">Банки-партнёры</a></li>
-            <li><a href="">Контакты</a></li>
+            <li><a href="#statistic">Услуги</a></li>
+            <li><a href="#why-we">О компании</a></li>
+            <li><a href="#steps">Этапы работы</a></li>
+            <li><a href="#about-company">Наша команда</a></li>
+            <li><a href="#bank-partners">Банки-партнёры</a></li>
+            <li><a href="#contacts">Контакты</a></li>
           </ul>
         </div>
+        <!-- Mobile -->
+        <div class="header-bottom mobile">
+          <div class="header-bottom-links">
+            <p>Задайте вопрос online</p>
+            <a href="https://wa.me/+79628800911">
+              <img src="./img/lizing/whatsapp-icon.svg" alt="whatsapp">
+            </a>
+            <a href="https://t.me/ECC_stroygrupp">
+              <img src="./img/lizing/telegram-icon.svg" alt="telegram">
+            </a>
+          </div>
+        </div>
       </div>
+    <!-- Mobile hidden menu -->
+     <div class="mobile-hidden-menu">
+      <a href="" class="mobile-hidden-menu-close">
+        <img src="./img/lizing/close-icon.svg" alt="закрыть">
+      </a>
+      <div class="mobile-hidden-menu-wrap">
+        <div class="mobile-hidden-menu-top">
+          <div class="mobile-hidden-menu-socials">
+            <a href="https://wa.me/+79628800911">
+              <img src="./img/lizing/whatsapp-icon.svg" alt="whatsapp">
+            </a>
+            <a href="https://t.me/ECC_stroygrupp">
+              <img src="./img/lizing/telegram-icon.svg" alt="telegram">
+            </a>
+          </div>
+          <div class="mobile-hidden-menu-links">
+            <a href="/">Главная</a>
+            <a href="#statistic">Услуги</a>
+            <a href="#why-we">О компании</a>
+            <a href="#steps">Этапы работ</a>
+            <a href="#about-company">Наша команда</a>
+            <a href="#bank-partners">Банки-партнёры</a>
+            <a href="#contacts">Конаткты</a>
+          </div>
+        </div>
+        <div class="mobile-hidden-menu-contacts">
+          <a href="telto:8 (938) 545-78-88">8 (938) 545-78-88</a>
+          <p>Краснодар, ул. Красная, 182, оф.201</p>
+        </div>
+      </div>
+     </div>
     </header>
 
     <div class="main">
@@ -106,11 +169,12 @@
               <input type="mail" name="mail" class="input" placeholder="E-mail">
               <button class="btn btn-primery form-btn" type="submit">ПОЛУЧИТЬ ПРЕДЛОЖЕНИЕ</button>
             </form>
+            <button class="js-consultation-btn">ПОЛУЧИТЬ  ПРЕДЛОЖЕНИЕ</button>
           </div>
         </div>
       </section>
 
-      <section class="statistic">
+      <section id="statistic" class="statistic">
         <div class="container">
           <div class="statistic-wrapper">
             <div class="statistic-item">
@@ -212,7 +276,7 @@
         </div>
       </section>
 
-      <section class="why-we">
+      <section id="why-we" class="why-we">
         <div class="container">
           <div class="why-we-header">
             <h2><span>Почему мы?</span></h2>
@@ -2593,7 +2657,7 @@
         </div>
       </section>
 
-      <section class="steps">
+      <section id="steps" class="steps">
         <div class="container">
           <h3>Этапы работы с нами</h3>
           <div class="steps-list">
@@ -2668,7 +2732,7 @@
         </div>
       </section>
 
-      <section class="about-company">
+      <section id="about-company" class="about-company">
         <div class="container">
           <div class="about-company-wrap">
             <div class="about-company-header">
@@ -2774,6 +2838,75 @@
         </div>
       </section>
 
+      <section id="bank-partners" class="bank-partners">
+        <div class="container">
+          <div class="bank-partners-wrap">
+            <div class="bank-partners-header">
+              <h2 class="sec-title"><span>Наши банки-партнёры</span></h2>
+              <div class="sec-br"></div>
+              <p class="sec-sub">БАНКИ</p>
+            </div>
+            <div class="bank-partners-list">
+              <img src="./img/lizing/bank-partners.png" alt="банки-партнёры">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="sertificates">
+        <div class="container">
+          <div class="sertificates-wrap">
+            <div class="sertificates-slider owl-carousel">
+              <div class="item">
+                <a href="./img/lizing/sertificate1.png">
+                  <img src="./img/lizing/sertificate1.png" alt="сертификат">
+                </a>
+              </div>
+              <div class="item">
+                <a href="./img/lizing/sertificate2.png">
+                  <img src="./img/lizing/sertificate2.png" alt="сертификат">
+                </a>
+              </div>
+              <div class="item">
+                <a href="./img/lizing/sertificate1.png">
+                  <img src="./img/lizing/sertificate1.png" alt="сертификат">
+                </a>
+              </div>
+              <div class="item">
+                <a href="./img/lizing/sertificate2.png">
+                  <img src="./img/lizing/sertificate2.png" alt="сертификат">
+                </a>
+              </div>
+              <div class="item">
+                <a href="./img/lizing/sertificate1.png">
+                  <img src="./img/lizing/sertificate1.png" alt="сертификат">
+                </a>
+              </div>
+              <div class="item">
+                <a href="./img/lizing/sertificate2.png">
+                  <img src="./img/lizing/sertificate2.png" alt="сертификат">
+                </a>
+              </div>
+              <div class="item">
+                <a href="./img/lizing/sertificate1.png">
+                  <img src="./img/lizing/sertificate1.png" alt="сертификат">
+                </a>
+              </div>
+              <div class="item">
+                <a href="./img/lizing/sertificate2.png">
+                  <img src="./img/lizing/sertificate2.png" alt="сертификат">
+                </a>
+              </div>
+            </div>
+            <div class="sertificates-text">
+              <h2>Разрешения и лицензии</h2>
+              <span></span>
+              <p><span>Лизинговая копания “ЕСС” обладает всеми необходимыми разрешениями и лицензиями </span>на осуществление деятельности в области лизинга и финансирования</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section class="order-sec">
         <div class="container">
           <div class="order-sec__wrap">
@@ -2848,7 +2981,7 @@
         </div>
       </section>
 
-      <section class="contacts" id="contacts">
+      <section id="contacts" class="contacts">
         <div class="container">
           <div class="contacts__wrap">
             <div class="contacts-map">

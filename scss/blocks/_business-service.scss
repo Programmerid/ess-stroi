@@ -243,6 +243,93 @@
     }
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1200px){
+    .business-service{
+        .business-service-options{
+            margin: 0 0 400px 0px;
 
+            &::before{
+                left: calc(50% - 106px);
+                width: 212px;
+                height: 350px;
+                bottom: -401px;
+            }
+            .business-service-option{
+
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    .business-service{
+        .business-service-options{
+            .business-service-option{
+                max-width: none;
+                width: 100%;
+                
+                &:nth-child(1){
+                    margin: 0 0 25px 0;
+                }
+                &:nth-child(2){
+                    margin: 0 0 25px 0;
+
+                    .business-service-option-top{
+                        flex-direction: row;
+
+                        .business-service-option-img{
+                            margin: 0 28px 0 0;
+                        }
+                    }
+                    p{
+                        max-width: none;
+                    }
+                }
+                &:nth-child(3){
+                    flex-direction: column-reverse;
+                    margin: 0 0 25px 0;
+
+                    .business-service-option-top{
+                        margin: 0 0 14px 0;
+                    }
+                }
+                &:nth-child(4){
+                    flex-direction: column-reverse;
+                    margin: 0;
+
+                    .business-service-option-top{
+                        flex-direction: row;
+                        margin: 0 0 14px 0;
+
+                        .business-service-option-img{
+                            margin: 0 28px 0 0;
+                        }
+                    }
+
+                    p{
+                        max-width: none;
+                    }
+                }
+
+                .business-service-option-top{
+                    flex-direction: row;
+                    max-width: none;
+                }
+            }
+        }
+        .business-service-calc{
+            .business-service-calc-content{
+                .business-service-calc-form{
+                    .form{
+                        >div{
+                            flex-direction: column;
+
+                            input{
+                               width: 100%; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }

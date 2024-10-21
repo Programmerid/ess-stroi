@@ -4,7 +4,8 @@
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.62) 0%, rgba(45, 29, 29, 0) 100%);
     backdrop-filter: blur(167.60000610351562px);
     margin: 0 0 -165px 0;
-    z-index: 1;
+    position: relative;
+    z-index: 3;
 
     // === header top
     .header-top{
@@ -16,6 +17,57 @@
         position: relative;
         max-height: 77px;
         width: 100%;
+
+        &.desctop{
+            display: flex;
+        }
+        &.mobile{
+            display: none;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 13px 0;
+
+            .header-mobile-logo{
+                a{
+                    max-width: 130px;
+
+                    img{
+                        max-width: 130px;
+                    }
+                }
+            }
+            .header-mobile-call{
+                a{
+                    color: $white;
+                    font-size: 12px;
+                    font-weight: 700;
+                    text-align: center;
+                }
+            }
+            .header-mobile-menu{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: center;
+
+                span{
+                    background-color: $green;
+                    height: 3px;
+
+                    &:nth-child(1){
+                        width: 31px;
+                    }
+                    &:nth-child(2){
+                        margin: 10px 0;
+                        width: 47px;
+                    }
+                    &:nth-child(3){
+                        width: 31px;
+                    }
+                }
+            }
+        }
 
         &::before{
             background-color: #393939;
@@ -119,23 +171,24 @@
                 }
                 .header-call-phone{
                     a{
+                        color: $white;
+                        font-size: 16px;
+                        font-weight: 700;
+                        margin: 0 0 1px 0;
                         display: block;
                         cursor: pointer;
                         text-align: center;
                         transition: ease-in-out 0.2s;
-    
-                        &:nth-child(1){
-                            color: $white;
-                            font-size: 16px;
-                            font-weight: 700;
-                            margin: 0 0 1px 0;
-                        }
-                        &:nth-child(2){
-                            color: $green;
-                            font-size: 10px;
-                            font-weight: 600;
-                            text-decoration: underline;
-                        }
+                    }
+                    button{
+                        color: $green;
+                        font-size: 10px;
+                        font-weight: 600;
+                        text-decoration: underline;
+                        display: block;
+                        cursor: pointer;
+                        text-align: center;
+                        transition: ease-in-out 0.2s;
                     }
                 }
             }
@@ -148,6 +201,39 @@
         position: relative;
         max-height: 96px;
         width: 100%;
+
+        &.desctop{}
+        &.mobile{
+            display: none;
+            padding: 16px 0;
+
+            .header-bottom-links{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin: 0 50px 0 0;
+    
+                p{
+                    color: $white;
+                    font-size: 10px;
+                    font-weight: 500;
+                }
+                a{
+                    transition: ease-in-out 0.2s;
+    
+                    &:nth-child(1){
+                        height: 16px;
+                        width: 16px;
+                    }
+                    &:nth-child(2){
+                        margin: 0 12px;
+                        height: 16px;
+                        width: 18px;
+                    }
+                }
+            }
+        }
 
         &::before{
             background-color: #393939;
@@ -187,8 +273,157 @@
             }
         }
     }
+
+    // Mobile hidden menu
+    .mobile-hidden-menu{
+        background-color: $green;
+        padding: 30px 40px;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: fit-content;
+        width: 100%;
+        text-align: left;
+        z-index: 100;
+        display: none;
+
+        .mobile-hidden-menu-close{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            right: 40px;
+            top: 30px;
+            height: 38px;
+            width: 38px;
+
+            img{
+                height: 38px;
+                width: 38px;
+            }
+        }
+
+        .mobile-hidden-menu-wrap{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+
+            .mobile-hidden-menu-top{
+                margin: 0 0 125px 0;
+
+                .mobile-hidden-menu-socials{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: flex-start;
+                    margin: 0 0 30px 0;
+    
+                    a{
+                        &:nth-child(1){
+                            margin: 0 20px 0 0;
+
+                            img{
+                                filter: brightness(0) saturate(100%) invert(100%) sepia(76%) saturate(2%) hue-rotate(6deg) brightness(114%) contrast(100%);
+                                height: 30px;
+                                width: 30px;
+                            }
+                        }
+                        &:nth-child(2){
+                            img{
+                                filter: brightness(0) saturate(100%) invert(43%) sepia(62%) saturate(3492%) hue-rotate(209deg) brightness(105%) contrast(101%);
+                                height: 30px;
+                                width: 34px;
+                            }
+                        }
+                        img{}
+                    }
+                }
+                .mobile-hidden-menu-links{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+    
+                    a{
+                        color: $white;
+                        font-size: 19px;
+                        font-weight: 700;
+                        margin: 0 0 20px 0;
+    
+                        &:last-child{
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+            .mobile-hidden-menu-contacts{
+                a{
+                    color: $white;
+                    font-size: 18px;
+                    font-weight: 700;
+                    padding: 0 0 0 28px;
+                    position: relative;
+                    margin: 0 0 20px 0;
+    
+                    &::before{
+                        background: url("./../../img/lizing/phone-icon.svg") no-repeat center;
+                        height: 24.4px;
+                        width: 14.6px;
+                        background-size: contain;
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
+                }
+                p{
+                    color: $white;
+                    font-size: 18px;
+                    font-weight: 300;
+                    padding: 0 0 0 31px;
+                    position: relative;
+    
+                    &::before{
+                        background: url("./../../img/lizing/point-icon.svg") no-repeat center;
+                        height: 24px;
+                        width: 17px;
+                        background-size: contain;
+                        content: "";
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
+                }
+            }
+        }
+
+    }
 }
 
-@media only screen and (max-width: 1024px){
-
+@media only screen and (max-width: 768px){
+    .header-lizing{
+        .header-top{
+            &.desctop{
+                display: none;
+            }
+            &.mobile{
+                display: flex;
+            }
+        }
+        .header-bottom{
+            padding: 37px 0;
+            position: relative;
+            max-height: 96px;
+            width: 100%;
+    
+            &.desctop{
+                display: none;
+            }
+            &.mobile{
+                display: block;
+            }
+        }
+    }
 }
