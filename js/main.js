@@ -528,3 +528,28 @@ $(document).ready(function () {
     })();
   });
 })();
+
+// плавный скролл при переходе на секции
+(function() {
+  // Получаем все ссылки с якорями
+  const links = document.querySelectorAll('a[href^="#"]');
+
+  // Добавляем обработчик события для каждой ссылки
+  links.forEach(link => {
+    link.addEventListener('click', function(event) {
+      event.preventDefault(); // Предотвращаем стандартное поведение
+
+      // Получаем цель по якорю
+      const targetId = this.getAttribute('href').substring(1);
+      const targetElement = document.getElementById(targetId);
+
+      if (targetElement) {
+        // Плавная прокрутка к элементу
+        window.scrollTo({
+          top: targetElement.offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+})();

@@ -246,13 +246,10 @@
 @media only screen and (max-width: 1200px){
     .business-service{
         .business-service-options{
-            margin: 0 0 400px 0px;
+            margin: 0 0 20px 0px;
 
             &::before{
-                left: calc(50% - 106px);
-                width: 212px;
-                height: 350px;
-                bottom: -401px;
+                display: none;
             }
             .business-service-option{
 
@@ -263,7 +260,18 @@
 @media only screen and (max-width: 768px){
     .business-service{
         .business-service-options{
+            margin: 0 0 400px 0px;
+
+            &::before{
+                display: block;
+                left: calc(50% - 106px);
+                width: 212px;
+                height: 350px;
+                bottom: -401px;
+            }
+
             .business-service-option{
+                align-items: flex-start !important;
                 max-width: none;
                 width: 100%;
                 
@@ -280,9 +288,7 @@
                             margin: 0 28px 0 0;
                         }
                     }
-                    p{
-                        max-width: none;
-                    }
+                    p{}
                 }
                 &:nth-child(3){
                     flex-direction: column-reverse;
@@ -305,9 +311,7 @@
                         }
                     }
 
-                    p{
-                        max-width: none;
-                    }
+                    p{}
                 }
 
                 .business-service-option-top{

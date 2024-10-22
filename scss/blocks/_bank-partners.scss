@@ -1,7 +1,7 @@
 @import "./../base/vars";
 
 .bank-partners{
-    padding: 120px 0 115px 0;
+    padding: 120px 0 75px 0;
 
     .bank-partners-wrap{
         .bank-partners-header{
@@ -40,8 +40,70 @@
                 margin-top: 16px;
             }
         }
+        .bank-partners-list{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: stretch;
+            justify-content: flex-start;
 
+            .bank-partners-list-item{
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: center;
+                margin: 0 0 40px 0;
+                width: 20%;
+
+                img{
+                    max-width: 100%;
+                }
+            }
+        }
     }
 }
+@media only screen and (max-width: 960px){
+    .bank-partners{
+        .bank-partners-wrap{
+            .bank-partners-header{
+                h2{
+                    span{}
+                }
+                .head-br{}
+                p{}
+            }
+            .bank-partners-list{
+                .bank-partners-list-item{
+                    width: 25%;
+    
+                    img{}
+                }
+            }
+        }
+    }
+}
+@media only screen and (max-width: 768px){
+    .bank-partners{
+        .bank-partners-wrap{
+            .bank-partners-header{
+                padding: 0;
 
-@media only screen and (max-width: 768px){}
+                h2{
+                    font-size: 30px;
+                    max-width: none;
+
+                    span{}
+                }
+                .head-br{}
+                p{}
+            }
+            .bank-partners-list{
+                .bank-partners-list-item{
+                    width: 50%;
+    
+                    img{}
+                }
+            }
+        }
+    }
+}

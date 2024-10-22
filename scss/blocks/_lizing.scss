@@ -6,12 +6,41 @@
     // PAGE
     .services{
         padding: 40px 0 80px;
+
+        .service-item__pic{
+            filter: none;
+        }
+        .service-item__text{
+            p{
+                color: $white;
+                font-size: 16px;
+                font-weight: 600;
+                margin: 0 0 10px 0;
+                padding: 0 0 0 19px;
+                position: relative;
+                text-align: left;
+
+                &:last-child{
+                    margin: 0;
+                }
+
+                &:before{
+                    background-color: $green;
+                    border-radius: 50%;
+                    position: absolute;
+                    content: "";
+                    top: 2px;
+                    left: 0;
+                    height: 8px;
+                    width: 8px;
+                }
+            }
+        }
     }
 
     // PAGE
     .attach-sec{
         background-color: #EBE5E0;
-        
 
         .attach-sec__wrap{
             .attach-sec__center{
@@ -20,6 +49,18 @@
                     width: 899px;
                     height: 442px;
                     left: -660px;
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 1025px){
+        .attach-sec{
+            .attach-sec__wrap{
+                .attach-sec__center{
+                    &::before{
+                        left: calc(0px + 420px);
+                        bottom: -276px;
+                    }
                 }
             }
         }
