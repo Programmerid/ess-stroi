@@ -194,3 +194,14 @@
         }
     }
 }
+@media only screen and (max-width: 480px){
+    .about-company{
+        .about-company-wrap{
+            .about-company-footer{
+                .about-company-footer-item{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

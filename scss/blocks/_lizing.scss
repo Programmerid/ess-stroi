@@ -44,23 +44,20 @@
 
         .attach-sec__wrap{
             .attach-sec__center{
+                align-items: center;
+                justify-content: flex-start;
+
                 &::before{
                     background: url("./../../img/lizing/form-lizing-bg.jpg") center center no-repeat;
                     width: 899px;
                     height: 442px;
-                    left: -660px;
+                    top: 40%;
+                    left: -371px;
                 }
-            }
-        }
-    }
-    @media only screen and (max-width: 1025px){
-        .attach-sec{
-            .attach-sec__wrap{
-                .attach-sec__center{
-                    &::before{
-                        left: calc(0px + 420px);
-                        bottom: -276px;
-                    }
+
+                .attach-sec__main{
+                    flex-grow: 0;
+                    width: 40%;
                 }
             }
         }
@@ -74,8 +71,9 @@
                     text-align: center;
 
                     &::before{
-                        left: calc(0px + 420px);
-                        bottom: -276px;
+                        transform: none;
+                        left: -18px;
+                        top: 128%;
                     }
 
                     .attach-sec__main{
@@ -106,6 +104,37 @@
             }
         }
     }
+    @media only screen and (max-width: 767px){
+        .attach-sec{
+            padding: 65px 0 330px;
+
+            .attach-sec__wrap{
+                .attach-sec__center{
+                    &::before{
+                        left: -150px;
+                        top: 82%;
+                    }
+                    .attach-sec__main{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    @media only screen and (max-width: 480px){
+        .attach-sec{
+            padding: 65px 0 330px;
+
+            .attach-sec__wrap{
+                .attach-sec__center{
+                    &::before{
+                        left: -25px;
+                        top: 80%;
+                    }
+                }
+            }
+        }
+    }
 
     // PAGE
     .team{
@@ -123,6 +152,21 @@
     // PAGE
     .seo{
         margin: 105px 0 0 0;
+    }
+
+    // contacts
+    @media only screen and (max-width: 480px){
+        .contacts{
+            .contacts-office{
+                height: 485px;
+                width: 100%;
+    
+                img{
+                    position: relative;
+                    top: calc(-25%);
+                }
+            }
+        }
     }
 }
 @media only screen and (max-width: 768px){

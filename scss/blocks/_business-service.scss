@@ -337,3 +337,20 @@
         }
     }
 }
+@media only screen and (max-width: 480px){
+    .business-service{
+        .business-service-calc{
+            padding: 18px 15px 50px;
+            
+            .business-service-calc-content{
+                .business-service-calc-form{
+                    .form{
+                        >div{
+                            input{}
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

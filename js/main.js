@@ -507,6 +507,7 @@ $(document).ready(function () {
         const mobileMenuButton = document.querySelector('.header-mobile-menu');
         const mobileHiddenMenu = document.querySelector('.mobile-hidden-menu');
         const mobileMenuCloseButton = document.querySelector('.mobile-hidden-menu-close');
+        const mobileMenuLinks = document.querySelectorAll('.mobile-hidden-menu-links a'); // Все ссылки внутри .mobile-hidden-menu-links
 
         function openMenu(event) {
             event.preventDefault(); 
@@ -518,16 +519,26 @@ $(document).ready(function () {
             mobileHiddenMenu.style.display = 'none';
         }
 
+        // Событие для открытия меню
         if (mobileMenuButton) {
             mobileMenuButton.addEventListener('click', openMenu);
         }
 
+        // Событие для закрытия меню
         if (mobileMenuCloseButton) {
             mobileMenuCloseButton.addEventListener('click', closeMenu);
+        }
+
+        // Событие для скрытия меню при клике на любую ссылку
+        if (mobileMenuLinks.length > 0) {
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', closeMenu); // Привязываем функцию закрытия меню
+            });
         }
     })();
   });
 })();
+
 
 // плавный скролл при переходе на секции
 (function() {
